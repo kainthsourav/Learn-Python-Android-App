@@ -1,0 +1,139 @@
+<html>
+<head>
+   <link rel="stylesheet" href="file:///android_asset/style-min.css"/>
+   <title>Python GUI Programming (Tkinter)</title>
+</head>
+<body style="padding: 10px !important;">
+<h1>Python - GUI Programming (Tkinter)</h1>
+<p>Python provides various options for developing graphical user interfaces (GUIs). Most important are listed below.</p>
+<ul>
+<li><p><b>Tkinter</b> &minus; Tkinter is the Python interface to the Tk GUI toolkit shipped with Python. We would look this option in this chapter.</p></li>
+<li><p><b>wxPython</b> &minus; This is an open-source Python interface for wxWindows <b>http://wxpython.org</b>.</p></li>
+<li><p><b>JPython</b> &minus; JPython is a Python port for Java which gives Python scripts seamless access to Java class libraries on the local machine <b>http://www.jython.org</b>.</p></li>
+</ul>
+<p>There are many other interfaces available, which you can find them on the net.</p>
+<h2>Tkinter Programming</h2>
+<p>Tkinter is the standard GUI library for Python. Python when combined with Tkinter provides a fast and easy way to create GUI applications. Tkinter provides a powerful
+object-oriented interface to the Tk GUI toolkit.</p>
+<p>Creating a GUI application using Tkinter is an easy task. All you need to do is perform the following steps &minus;</p>
+<ul>
+<li><p>Import the <i>Tkinter</i> module.</p></li>
+<li><p>Create the GUI application main window.</p></li>
+<li><p>Add one or more of the above-mentioned widgets to the GUI application.</p></li>
+<li><p>Enter the main event loop to take action against each event triggered by the user.</p></li>
+</ul>
+<h2>Example</h2>
+<pre class="prettyprint notranslate">
+#!/usr/bin/python
+
+import tkinter
+top = tkinter.Tk()
+# Code to add widgets will go here...
+top.mainloop()
+</pre>
+<p>The above code would create a window.</p>
+<h2>Tkinter Widgets</h2>
+<p>Tkinter provides various controls, such as buttons, labels and text boxes used in a GUI application. These controls are commonly called widgets.</p>
+<p>There are currently 15 types of widgets in Tkinter. We present these widgets as well as a brief description in the following table &minus;</p>
+<table class="table table-bordered">
+<tr>
+<th style="text-align:center;">Sr.No.</th>
+<th style="text-align:center;">Operator &amp; Description</th>
+</tr>
+<td style="text-align:center;vertical-align:middle;">1</td>
+<td><p><b>Button</b></p>
+<p>The Button widget is used to display buttons in your application.</p></td>
+</tr>
+<td style="text-align:center;vertical-align:middle;">2</td>
+<td><p><b>Canvas</b></p>
+<p>The Canvas widget is used to draw shapes, such as lines, ovals, polygons and rectangles, in your application.</p></td>
+</tr>
+<td style="text-align:center;vertical-align:middle;">3</td>
+<td><p><b>Checkbutton</b></p>
+<p>The Checkbutton widget is used to display a number of options as checkboxes. The user can select multiple options at a time.</p></td>
+</tr>
+<td style="text-align:center;vertical-align:middle;">4</td>
+<td><p><b>Entry</b></p>
+<p>The Entry widget is used to display a single-line text field for accepting values from a user.</p></td>
+</tr>
+<td style="text-align:center;vertical-align:middle;">5</td>
+<td><p><b>Frame</b></p>
+<p>The Frame widget is used as a container widget to organize other widgets.</p></td>
+</tr>
+<td style="text-align:center;vertical-align:middle;">6</td>
+<td><p><b>Label</b></p>
+<p>The Label widget is used to provide a single-line caption for other widgets. It can also contain images.</p></td>
+</tr>
+<td style="text-align:center;vertical-align:middle;">7</td>
+<td><p><b>Listbox</b></p>
+<p>The Listbox widget is used to provide a list of options to a user.</p></td>
+</tr>
+<td style="text-align:center;vertical-align:middle;">8</td>
+<td><p><b>Menubutton</b></p>
+<p>The Menubutton widget is used to display menus in your application.</p></td>
+</tr>
+<td style="text-align:center;vertical-align:middle;">9</td>
+<td><p><b>Menu</b></p>
+<p>The Menu widget is used to provide various commands to a user. These commands are contained inside Menubutton.</p></td>
+</tr>
+<td style="text-align:center;vertical-align:middle;">10</td>
+<td><p><b>Message</b></p>
+<p>The Message widget is used to display multiline text fields for accepting values from a user.</p></td>
+</tr>
+<td style="text-align:center;vertical-align:middle;">11</td>
+<td><p><b>Radiobutton</b></p>
+<p>The Radiobutton widget is used to display a number of options as radio buttons. The user can select only one option at a time.</p></td>
+</tr>
+<td style="text-align:center;vertical-align:middle;">12</td>
+<td><p><b>Scale</b></p>
+<p>The Scale widget is used to provide a slider widget.</p></td>
+</tr>
+<td style="text-align:center;vertical-align:middle;">13</td>
+<td><p><b>Scrollbar</b></p>
+<p>The Scrollbar widget is used to add scrolling capability to various widgets, such as list boxes.</p></td>
+</tr>
+<td style="text-align:center;vertical-align:middle;">14</td>
+<td><p><b>Text</b></p>
+<p>The Text widget is used to display text in multiple lines.</p></td>
+</tr>
+<td style="text-align:center;vertical-align:middle;">15</td>
+<td><p><b>Toplevel</b></p>
+<p>The Toplevel widget is used to provide a separate window container.</p></td>
+</tr>
+<td style="text-align:center;vertical-align:middle;">16</td>
+<td><p><b>Spinbox</b></p>
+<p>The Spinbox widget is a variant of the standard Tkinter Entry widget, which can be used to select from a fixed number of values.</p></td>
+</tr>
+<td style="text-align:center;vertical-align:middle;">17</td>
+<td><p><b>PanedWindow</b></p>
+<p>A PanedWindow is a container widget that may contain any number of panes, arranged horizontally or vertically.</p></td>
+</tr>
+<td style="text-align:center;vertical-align:middle;">18</td>
+<td><p><b>LabelFrame</b></p>
+<p>A labelframe is a simple container widget. Its primary purpose is to act as a spacer or container for complex window layouts.</p></td>
+</tr>
+<td style="text-align:center;vertical-align:middle;">19</td>
+<td><p><b>tkMessageBox</b></p>
+<p>This module is used to display message boxes in your applications.</p></td>
+</tr>
+</table>
+<h2>Standard attributes</h2>
+<p>Following are the list of attribute &minus;</p>
+<ul>
+<li>Dimensions</li>
+<li>Colors</li>
+<li>Fonts</li>
+<li>Anchors</li>
+<li>Relief styles</li>
+<li>Bitmaps</li>
+<li>Cursors</li>
+</ul>
+<h2>Geometry Management</h2>
+<p>All Tkinter widgets have access to specific geometry management methods, which have the purpose of organizing widgets throughout the parent widget area. Tkinter exposes the following geometry manager classes: pack, grid, and place.</p>
+<ul>
+<li><p><b>The <i>pack()</i> Method</b> &minus; This geometry manager organizes widgets in blocks before placing them in the parent widget.</p></li>
+<li><p><b>The <i>grid()</i> Method</b> &minus; This geometry manager organizes widgets in a table-like structure in the parent widget.</p></li>
+<li><p><b>The <i>place()</i> Method</b> &minus; This geometry manager organizes widgets by placing them in a specific position in the parent widget.</p></li>
+</ul>
+</body>
+</html>

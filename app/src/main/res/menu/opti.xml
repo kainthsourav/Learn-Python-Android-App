@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/Home"
+        android:icon="@drawable/about"
+        android:title="Home" />
+    <item android:id="@+id/Be"
+        android:icon="@drawable/s"
+        android:title="Beginners" />
+    <item android:id="@+id/Ad"
+        android:icon="@drawable/s"
+        android:title="Advance" />
+    <item android:id="@+id/Pro"
+        android:icon="@drawable/s"
+        android:title="Programs" />
+    <item android:id="@+id/Interr"
+        android:icon="@drawable/s"
+        android:title="Interview Q &amp; A" />
+
+    <item android:id="@+id/about"
+        android:icon="@drawable/s"
+        android:title="About Us" />
+<item android:id="@+id/ext"
+    android:icon="@drawable/c"
+    android:title="Exit"
+    ></item>
+
+</menu>

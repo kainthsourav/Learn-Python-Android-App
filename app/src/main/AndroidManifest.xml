@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kainthsourav.python">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Learn Python"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="Python-Home">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".Basic"
+            android:label="Python-Beginners" />
+        <activity
+            android:name=".Adv"
+            android:label="Python-Advance" />
+        <activity
+            android:name=".Pro"
+            android:label="Python-Programs" />
+        <activity
+            android:name=".Inter"
+            android:label="Python-Interview Questions" />
+        <activity
+            android:name=".Object_Oriented"
+            android:label="Python-Object Oriented" />
+        <activity
+            android:name=".Regular_Expressions"
+            android:label="Python-Regular Expressions" />
+        <activity
+            android:name=".CGI_Programming"
+            android:label="Python-CGI Programming" />
+        <activity
+            android:name=".MySQLDatabaseAccess"
+            android:label="Python-MySQL Database Access" />
+        <activity
+            android:name=".NetworkProgramming"
+            android:label="Python-NetworkProgramming" />
+        <activity
+            android:name=".SMTP"
+            android:label="Python-SMTP" />
+        <activity
+            android:name=".Multithreading"
+            android:label="Python-Multithreading" />
+        <activity
+            android:name=".XMLProcessing"
+            android:label="Python-XML Processing" />
+        <activity
+            android:name=".GUIProgramiming"
+            android:label="Python-GUI Programiming" />
+        <activity
+            android:name=".Overview"
+            android:label="Python-Overview" />
+        <activity
+            android:name=".BasicSyntax"
+            android:label="Python-Basic Syntax" />
+        <activity
+            android:name=".Intro"
+            android:label="Python-Introduction" />
+        <activity
+            android:name=".VariableTypes"
+            android:label="Python-Variable Types" />
+        <activity
+            android:name=".BasicOperations"
+            android:label="Python-Basic Operations" />
+        <activity
+            android:name=".DesicionMaking"
+            android:label="Python-Desicion Making" />
+        <activity
+            android:name=".IFStatement"
+            android:label="Python-If statement" />
+        <activity
+            android:name=".ElseStatement"
+            android:label="Python-Else statement" />
+        <activity
+            android:name=".NestedIF"
+            android:label="Python-Nested If" />
+        <activity
+            android:name=".Loops"
+            android:label="Python-Loops" />
+        <activity
+            android:name=".Break"
+            android:label="Python-Break" />
+        <activity
+            android:name=".Pass"
+            android:label="Python-Pass Statement" />
+        <activity
+            android:name=".Numbers"
+            android:label="Python-Numbers" />
+        <activity
+            android:name=".Strings"
+            android:label="Python-Strings" />
+        <activity
+            android:name=".Lists"
+            android:label="Python-Lists" />
+        <activity
+            android:name=".Tuples"
+            android:label="Python-Tuples" />
+        <activity
+            android:name=".Dict"
+            android:label="Python-Dictionary" />
+        <activity
+            android:name=".datetime"
+            android:label="Python-Date Time" />
+        <activity
+            android:name=".Functions"
+            android:label="Python-Fuctions" />
+        <activity
+            android:name=".Modules"
+            android:label="Python-Modules" />
+        <activity
+            android:name=".Filesio"
+            android:label="Python-Files I/O" />
+        <activity
+            android:name=".handling"
+            android:label="Python-Exception Handling" />
+        <activity
+            android:name=".Helloworld"
+            android:label="Python-Hello World" />
+        <activity
+            android:name=".Count10"
+            android:label="Python-Count To 1o" />
+        <activity
+            android:name=".Desi"
+            android:label="Python-Decisions" />
+        <activity
+            android:name=".debugg"
+            android:label="Python-Debugging" />
+        <activity
+            android:name=".fun"
+            android:label="Python-Functions" />
+        <activity
+            android:name=".listss"
+            android:label="Python-Lists" />
+        <activity
+            android:name=".loopss"
+            android:label="Python-Loops" />
+        <activity
+            android:name=".experess"
+            android:label="Python-Boolean Expressions" />
+        <activity
+            android:name=".dicto"
+            android:label="Python-Dictionaries" />
+        <activity
+            android:name=".mod"
+            android:label="Python-Using Modules" />
+        <activity
+            android:name=".molis"
+            android:label="Python-List" />
+        <activity
+            android:name=".rstr"
+            android:label="Python-Strings" />
+        <activity
+            android:name=".fio"
+            android:label="Python-File I/O" />
+        <activity
+            android:name=".glo"
+            android:label="Python-Python Glossary" />
+        <activity
+            android:name=".faq"
+            android:label="Python-FAQ" />
+        <activity android:name=".Videos" />
+        <activity android:name=".Login" />
+        <activity android:name=".Signup" />
+        <activity android:name=".Aboutus"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,90 @@
+<html>
+<head>
+   <link rel="stylesheet" href="file:///android_asset/style-min.css"/>
+   <title>Python IF...ELIF...ELSE Statements</title>
+</head>
+<body style="padding: 10px !important;">
+<h1>Python - IF...ELIF...ELSE Statements</h1>
+<p>An <b>else</b> statement can be combined with an <b>if</b> statement. An <b>else</b> statement contains the block of code that executes if the conditional expression in the if statement resolves to 0 or a FALSE value.</p>
+<p>The <i>else</i> statement is an optional statement and there could be at most only one <b>else</b> statement following <b>if</b> .</p>
+<p><b>Syntax</b></p>
+<p>The syntax of the <i>if...else</i> statement is &minus;</p>
+<pre class="result notranslate">
+if expression:
+   statement(s)
+else:
+   statement(s)
+</pre>
+<p><b>Example</b></p>
+<pre class="prettyprint notranslate">
+#!/usr/bin/python
+
+var1 = 100
+if var1:
+   print "1 - Got a true expression value"
+   print var1
+else:
+   print "1 - Got a false expression value"
+   print var1
+
+var2 = 0
+if var2:
+   print "2 - Got a true expression value"
+   print var2
+else:
+   print "2 - Got a false expression value"
+   print var2
+
+print "Good bye!"
+</pre>
+<p>When the above code is executed, it produces the following result &minus;</p>
+<pre class="result notranslate">
+1 - Got a true expression value
+100
+2 - Got a false expression value
+0
+Good bye!
+</pre>
+<h2>The <i>elif</i> Statement</h2>
+<p>The <b>elif</b> statement allows you to check multiple expressions for TRUE and execute a block of code as soon as one of the conditions evaluates to TRUE.</p>
+<p>Similar to the <b>else</b>, the <b>elif</b> statement is optional. However, unlike <b>else</b>, for which there can be at most one statement, there can be an arbitrary number of <b>elif</b> statements following an <b>if</b>.</p>
+<h2>Syntax</h2>
+<pre class="result notranslate">
+if expression1:
+   statement(s)
+elif expression2:
+   statement(s)
+elif expression3:
+   statement(s)
+else:
+   statement(s)
+</pre>
+<p>Core Python does not provide switch or case statements as in other languages, but we can use if..elif...statements to simulate switch case as follows &minus;</p>
+<h2>Example</h2>
+<pre class="prettyprint notranslate">
+#!/usr/bin/python
+
+var = 100
+if var == 200:
+   print "1 - Got a true expression value"
+   print var
+elif var == 150:
+   print "2 - Got a true expression value"
+   print var
+elif var == 100:
+   print "3 - Got a true expression value"
+   print var
+else:
+   print "4 - Got a false expression value"
+   print var
+
+print "Good bye!"
+</pre>
+<p>When the above code is executed, it produces the following result &minus;</p>
+<pre class="result notranslate">
+3 - Got a true expression value
+100
+Good bye!
+</pre>
+</body>
+</html>

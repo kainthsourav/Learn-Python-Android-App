@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Python</title>
+
+
+
+
+<meta content="http://www.w3.org/1999/xhtml; charset=utf-8" http-equiv="Content-Type"></head><body class="calibre"><big><span style="font-style: italic;"></span><span style="font-style: italic;"></span></big><b style="color: #303F9F; font-family: Verdana,Arial,Tahoma,Calibri,Geneva,sans-serif; font-size: 15px; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255);"><div style="margin: 0px; padding: 0px; text-align: center;"><font style="" color="#303F9F"><font style="" size="5">Using Modules&nbsp;</font></font><span style="color: rgb(0, 0, 102); font-family: Verdana; font-size: 16px; font-style: normal; font-variant: normal; font-weight: bold; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline ! important; float: none;"><br>
+</span></div>
+</b>
+<p class="style32" style="font-family: Verdana; font-size: 10pt; text-decoration: none; font-weight: bold; color: rgb(0, 51, 153); font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255);" align="center"><b style="color: #303F9F; font-family: Verdana,Arial,Tahoma,Calibri,Geneva,sans-serif; font-size: 15px; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255);">
+<div style="margin: 0px; padding: 0px; text-align: center;"><font style="" size="4"><span style="font-family: 'Palatino Linotype';"></span></font></div>
+</b></p><br>
+<p>Here's this chapter's typing exercise (name it cal.py (<code>import</code>
+ actually looks for a file named calendar.py and reads it in. If the 
+file is named calendar.py and it sees a "import calendar" it tries to 
+read in itself which works poorly at best.)):</p>
+
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="python source-python">
+<pre class="de1"><span class="kw1">import</span> <span class="kw3">calendar</span><br>year <span class="sy0">=</span> <span class="kw2">input</span><span class="br0">(</span><span class="st0">"Type in the year number: "</span><span class="br0">)</span><br><span class="kw3">calendar</span>.<span class="me1">prcal</span><span class="br0">(</span>year<span class="br0">)</span>
+</pre></div>
+</div>
+
+<p>And here is part of the output I got:</p>
+
+<pre>Type in the year number: 2001<br><br>                                 2001                                  <br><br>       January                  February                    March      <br><br>Mo Tu We Th Fr Sa Su      Mo Tu We Th Fr Sa Su      Mo Tu We Th Fr Sa Su<br>1  2  3  4  5  6  7                1  2  3  4                1  2  3  4     <br>8  9 10 11 12 13 14       5  6  7  8  9 10 11       5  6  7  8  9 10 11<br>15 16 17 18 19 20 21      12 13 14 15 16 17 18      12 13 14 15 16 17 18     <br>22 23 24 25 26 27 28      19 20 21 22 23 24 25      19 20 21 22 23 24 25     <br>29 30 31                  26 27 28                  26 27 28 29 30 31        <br></pre>
+
+<p>(I skipped some of the output, but I think you get the idea.) So what does the program do? The first line <code>import calendar</code> uses a new command <code>import</code>. The command <code>import</code> loads a module (in this case the <code>calendar</code>
+ module). To see the commands available in the standard modules either 
+look in the library reference for python (if you downloaded it) or go to
+ <a target="_blank" rel="nofollow" class="external free" href="http://docs.python.org/library/">http://docs.python.org/library/</a>. If you look at the documentation for the calendar module, it lists a function called <code>prcal</code> that prints a calendar for a year. The line <code>calendar.prcal(year)</code> uses this function. In summary to use a module <code>import</code> it and then use <code>module_name.function</code> for functions in the module. Another way to write the program is:</p>
+
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="python source-python">
+<pre class="de1"><span class="kw1">from</span> <span class="kw3">calendar</span> <span class="kw1">import</span> prcal<br> <br>year <span class="sy0">=</span> <span class="kw2">input</span><span class="br0">(</span><span class="st0">"Type in the year number: "</span><span class="br0">)</span><br>prcal<span class="br0">(</span>year<span class="br0">)</span>
+</pre></div>
+</div>
+
+<p>This version imports a specific function from a module. Here is 
+another program that uses the Python Library (name it something like 
+clock.py) (press Ctrl and the 'c' key at the same time to terminate the 
+program):</p>
+
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="python source-python">
+<pre class="de1"><span class="kw1">from</span> <span class="kw3">time</span> <span class="kw1">import</span> <span class="kw3">time</span><span class="sy0">,</span> ctime<br> <br>prev_time <span class="sy0">=</span> <span class="st0">""</span><br><span class="kw1">while</span> <span class="kw2">True</span>:<br>    the_time <span class="sy0">=</span> ctime<span class="br0">(</span><span class="kw3">time</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><br>    <span class="kw1">if</span> prev_time <span class="sy0">!=</span> the_time:<br>        <span class="kw1">print</span> <span class="st0">"The time is:"</span><span class="sy0">,</span> ctime<span class="br0">(</span><span class="kw3">time</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><br>        prev_time <span class="sy0">=</span> the_time<br></pre></div>
+</div>
+
+<p>With some output being:</p>
+
+<pre>The time is: Sun Aug 20 13:40:04 2000<br>The time is: Sun Aug 20 13:40:05 2000<br>The time is: Sun Aug 20 13:40:06 2000<br>The time is: Sun Aug 20 13:40:07 2000<br><br>Traceback (innermost last):<br> File "clock.py", line 5, in ?<br>    the_time = ctime(time())<br><br>KeyboardInterrupt<br></pre>
+
+<p>The output is infinite of course so I canceled it (or the output at 
+least continues until Ctrl+C is pressed). The program just does a 
+infinite loop (<code>True</code> is always true, so <code>while True:</code>
+ goes forever) and each time checks to see if the time has changed and 
+prints it if it has. Notice how multiple names after the import 
+statement are used in the line <code>from time import time, ctime</code>.</p>
+
+<p>The Python Library contains many useful functions. These functions 
+give your programs more abilities and many of them can simplify 
+programming in Python.</p>
+
+<h3> <span class="mw-headline" id="Exercises">Exercises</span></h3>
+
+<p>Rewrite the High_low.py program from section <a href="http://en.wikibooks.org/wiki/Non-Programmer%27s_Tutorial_for_Python_2.6/Decisions#Examples" title="Non-Programmer's Tutorial for Python 2.6/Decisions">Decisions</a>
+ to use a random integer between 0 and 99 instead of the hard-coded 78. 
+Use the Python documentation to find an appropriate module and function 
+to do this.</p>
+</body></html>

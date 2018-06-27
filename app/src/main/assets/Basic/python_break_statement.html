@@ -1,0 +1,47 @@
+<html>
+<head>
+   <link rel="stylesheet" href="file:///android_asset/style-min.css"/>
+   <title>Python break statement</title>
+</head>
+<body style="padding: 10px !important;">
+<h1>Python - Break Statement</h1>
+<p>It terminates the current loop and resumes execution at the next statement, just like the traditional break statement in C.</p>
+<p>The most common use for break is when some external condition is triggered requiring a hasty exit from a loop. The <b>break</b> statement can be used in both <i>while</i> and <i>for</i> loops.</p>
+<p>If you are using nested loops, the break statement stops the execution of the innermost loop and start executing the next line of code after the block.</p>
+<h2>Syntax</h2>
+<p>The syntax for a <b>break</b> statement in Python is as follows &minus;</p>
+<pre class="result notranslate">
+break
+</pre>
+<h2>Example</h2>
+<pre class="prettyprint notranslate">
+#!/usr/bin/python
+
+for letter in 'Python':     # First Example
+   if letter == 'h':
+      break
+   print 'Current Letter :', letter
+  
+var = 10                    # Second Example
+while var &gt; 0:              
+   print 'Current variable value :', var
+   var = var -1
+   if var == 5:
+      break
+
+print "Good bye!"
+</pre>
+<p>When the above code is executed, it produces the following result &minus;</p>
+<pre class="result notranslate">
+Current Letter : P
+Current Letter : y
+Current Letter : t
+Current variable value : 10
+Current variable value : 9
+Current variable value : 8
+Current variable value : 7
+Current variable value : 6
+Good bye!
+</pre>
+</body>
+</html>

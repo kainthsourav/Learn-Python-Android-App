@@ -1,0 +1,38 @@
+<html>
+<head>
+   <link rel="stylesheet" href="file:///android_asset/style-min.css"/>
+   <title>Python Pass Statement</title>
+</head>
+<body style="padding: 10px !important;">
+<h1>Python Pass Statement</h1>
+<p>It is used when a statement is required syntactically but you do not want any command or code to execute.</p>
+<p>The <b>pass</b> statement is a <i>null</i> operation; nothing happens when it executes. The <b>pass</b> is also useful in places where your code will eventually go, but has not been written yet (e.g., in stubs for example) &minus;</p>
+<h2>Syntax</h2>
+<pre class="result notranslate">
+pass
+</pre>
+<h2>Example</h2>
+<pre class="prettyprint notranslate">
+#!/usr/bin/python
+
+for letter in 'Python': 
+   if letter == 'h':
+      pass
+      print 'This is pass block'
+   print 'Current Letter :', letter
+
+print "Good bye!"
+</pre>
+<p>When the above code is executed, it produces following result &minus;</p>
+<pre class="result notranslate">
+Current Letter : P
+Current Letter : y
+Current Letter : t
+This is pass block
+Current Letter : h
+Current Letter : o
+Current Letter : n
+Good bye!
+</pre>
+</body>
+</html>

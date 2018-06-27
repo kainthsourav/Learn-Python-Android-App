@@ -1,0 +1,318 @@
+<html>
+<head>
+   <link rel="stylesheet" href="file:///android_asset/style-min.css"/>
+   <title>Python Numbers</title>
+</head>
+<body style="padding: 10px !important;">
+<h1>Python - Numbers</h1>
+<p>Number data types store numeric values. They are immutable data types, means that changing the value of a number data type results in a newly allocated object.</p>
+<p>Number objects are created when you assign a value to them. For example &minus;</p>
+<pre class="prettyprint notranslate">
+var1 = 1
+var2 = 10
+</pre>
+<p>You can also delete the reference to a number object by using the <b>del</b> statement. The syntax of the del statement is &minus;</p>
+<pre class="result notranslate">
+del var1[,var2[,var3[....,varN]]]]
+</pre>
+<p>You can delete a single object or multiple objects by using the <b>del</b> statement. For example &minus;</p>
+<pre class="prettyprint notranslate">
+del var
+del var_a, var_b
+</pre>
+<p>Python supports four different numerical types &minus;</p>
+<ul>
+<li><p><b>int (signed integers)</b> &minus; They are often called just integers or ints, are positive or negative whole numbers with no decimal point.</p></li>
+<li><p><b>long (long integers )</b> &minus; Also called longs, they are integers of unlimited size, written like integers and followed by an uppercase or lowercase L.</p></li>
+<li><p><b>float (floating point real values)</b> &minus; Also called floats, they represent real numbers and are written with a decimal point dividing the integer and fractional parts. Floats may also be in scientific notation, with E or e indicating the power of 10 (2.5e2 = 2.5 x 10<sup>2</sup> = 250).</p></li>
+<li><p><b>complex (complex numbers)</b> &minus; are of the form a + bJ, where a and b are floats and J (or j) represents the square root of -1 (which is an imaginary number). The real part of the number is a, and the imaginary part is b. Complex numbers are not used much in Python programming.</p></li>
+</ul>
+<p><b>Examples</b></p>
+<p>Here are some examples of numbers</p>
+<table class="table table-bordered">
+<tr>
+<th style="text-align:center;">int</th>
+<th style="text-align:center;">long</th>
+</tr>
+<tr>
+<td>10</td>
+<td>51924361L</td>
+<!--<td>0.0</td>
+<td>3.14j</td>-->
+</tr>
+<tr>
+<td>100</td>
+<td>-0x19323L</td>
+<!--<td>15.20</td>
+<td>45.j</td>-->
+</tr>
+<tr>
+<td>-786</td>
+<td>0122L</td>
+<!--<td>-21.9</td>
+<td>9.322e-36j</td>-->
+</tr>
+<tr>
+<td>080</td>
+<td>0xDEFABCECBDAECBFBAEL</td>
+<!--<td>32.3+e18</td>
+<td>.876j</td>-->
+</tr>
+<tr>
+<td>-0490</td>
+<td>535633629843L</td>
+<!--<td>-90.</td>
+<td>-.6545+0J</td>-->
+</tr>
+<tr>
+<td>-0x260</td>
+<td>-052318172735L</td>
+<!--<td>-32.54e100</td>
+<td>3e+26J</td>-->
+</tr>
+<tr>
+<td>0x69</td>
+<td>-4721885298529L</td>
+<!--<td>70.2-E12</td>
+<td>4.53e-7j</td>-->
+</tr>
+</table>
+<table style="text-align:center;" class="table table-bordered">
+<tr>
+<th style="text-align:center;">float</th>
+<th style="text-align:center;">complex</th>
+</tr>
+<tr>
+<td>0.0</td>
+<td>3.14j</td>
+</tr>
+<tr>
+<td>15.20</td>
+<td>45.j</td>
+</tr>
+<tr>
+<td>-21.9</td>
+<td>9.322e-36j</td>
+</tr>
+<tr>
+<td>32.3+e18</td>
+<td>.876j</td>
+</tr>
+<tr>
+<td>-90.</td>
+<td>-.6545+0J</td>
+</tr>
+<tr>
+<td>-32.54e100</td>
+<td>3e+26J</td>
+</tr>
+<tr>
+<td>70.2-E12</td>
+<td>4.53e-7j</td>
+</tr>
+</table>
+<ul>
+<li><p>Python allows you to use a lowercase L with long, but it is recommended that you use only an uppercase L to avoid confusion with the number 1. Python displays long integers with an uppercase L.</p></li>
+<li><p>A complex number consists of an ordered pair of real floating point numbers denoted by a + bj, where a is the real part and b is the imaginary part of the complex number.</p></li>
+</ul>
+<h2>Number Type Conversion</h2>
+<p>Python converts numbers internally in an expression containing mixed types to a common type for evaluation. But sometimes, you need to coerce a number explicitly from one type to another to satisfy the requirements of an operator or function parameter.</p>
+<ul>
+<li><p>Type <b>int(x)</b> to convert x to a plain integer.</p></li>
+<li><p>Type <b>long(x)</b> to convert x to a long integer.</p></li>
+<li><p>Type <b>float(x)</b> to convert x to a floating-point number.</p></li>
+<li><p>Type <b>complex(x)</b> to convert x to a complex number with real part x and imaginary part zero.</p></li>
+<li><p>Type <b>complex(x, y)</b> to convert x and y to a complex number with real part x and imaginary part y. x and y are numeric expressions</p></li>
+</ul>
+<h2>Mathematical Functions</h2>
+<p>Python includes following functions that perform mathematical calculations.</p>
+<table class="table table-bordered">
+<tr>
+<th style="text-align:center;">Sr.No.</th>
+<th style="text-align:center;">Function &amp; Description</th>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;">1</td>
+<td><p><b>abs(x)</b></p>
+<p>The absolute value of x: the (positive) distance between x and zero.</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;">2</td>
+<td><p><b>ceil(x) </b></p>
+<p>The ceiling of x: the smallest integer not less than x</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;">3</td>
+<td><p><b>cmp(x, y)</b></p>
+<p>-1 if x &lt; y, 0 if x == y, or 1 if x &gt; y </p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;">4</td>
+<td><p><b>exp(x) </b></p>
+<p>The exponential of x: e<sup>x</sup> </p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;">5</td>
+<td><p><b>fabs(x)</b></p>
+<p>The absolute value of x.</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;">6</td>
+<td><p><b>floor(x) </b></p>
+<p>The floor of x: the largest integer not greater than x</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;">7</td>
+<td><p><b>log(x) </b></p>
+<p>The natural logarithm of x, for x&gt; 0 </p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;">8</td>
+<td><p><b>log10(x) </b></p>
+<p>The base-10 logarithm of x for x&gt; 0 .</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;">9</td>
+<td><p><b>max(x1, x2,...) </b></p>
+<p>The largest of its arguments: the value closest to positive infinity </p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;">10</td>
+<td><p><b>min(x1, x2,...) </b></p>
+<p>The smallest of its arguments: the value closest to negative infinity </p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;">11</td>
+<td><p><b>modf(x) </b></p>
+<p>The fractional and integer parts of x in a two-item tuple. Both parts have the same sign as x. The integer part is returned as a float.</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;">12</td>
+<td><p><b>pow(x, y)</b></p>
+<p>The value of x**y.</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;">13</td>
+<td><p><b>round(x [,n])</b></p>
+<p><b>x</b> rounded to n digits from the decimal point. Python rounds away from zero as a tie-breaker: round(0.5) is 1.0 and round(-0.5) is -1.0.</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;">14</td>
+<td><p><b>sqrt(x)</b></p>
+<p>The square root of x for x &gt; 0</p></td>
+</tr>
+</table>
+<h2>Random Number Functions</h2>
+<p>Random numbers are used for games, simulations, testing, security, and privacy applications. Python includes following functions that are commonly used.</p>
+<table class="table table-bordered">
+<tr>
+<th style="text-align:center;">Sr.No.</th>
+<th style="text-align:center;">Function &amp; Description</th>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;">1</td>
+<td><p><b>choice(seq)</b></p>
+<p>A random item from a list, tuple, or string.</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;">2</td>
+<td><p><b>randrange ([start,] stop [,step]) </b></p>
+<p>A randomly selected element from range(start, stop, step)</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;">3</td>
+<td><p><b>random() </b></p>
+<p>A random float r, such that 0 is less than or equal to r and r is less than 1</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;">4</td>
+<td><p><b>seed([x]) </b></p>
+<p>Sets the integer starting value used in generating random numbers. Call this function before calling any other random module function. Returns None.</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;">5</td>
+<td><p><b>shuffle(lst) </b></p>
+<p>Randomizes the items of a list in place. Returns None.</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;">6</td>
+<td><p><b>uniform(x, y)</b></p>
+<p>A random float r, such that x is less than or equal to r and r is less than y </p></td>
+</tr>
+</table>
+<h2>Trigonometric Functions</h2>
+<p>Python includes following functions that perform trigonometric calculations.</p>
+<table class="table table-bordered">
+<tr>
+<th style="text-align:center;">Sr.No.</th>
+<th style="text-align:center;">Function &amp; Description</th>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;">1</td>
+<td><p><b>acos(x)</b></p>
+<p>Return the arc cosine of x, in radians.</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;">2</td>
+<td><p><b>asin(x)</b></p>
+<p>Return the arc sine of x, in radians.</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;">3</td>
+<td><p><b>atan(x)</b></p>
+<p>Return the arc tangent of x, in radians.</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;">4</td>
+<td><p><b>atan2(y, x)</b></p>
+<p>Return atan(y / x), in radians. </p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;">5</td>
+<td><p><b>cos(x)</b></p>
+<p>Return the cosine of x radians.</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;">6</td>
+<td><p><b>hypot(x, y)</b></p>
+<p>Return the Euclidean norm, sqrt(x*x + y*y). </p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;">7</td>
+<td><p><b>sin(x)</b></p>
+<p>Return the sine of x radians.</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;">8</td>
+<td><p><b>tan(x)</b></p>
+<p>Return the tangent of x radians.</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;">9</td>
+<td><p><b>degrees(x)</b></p>
+<p>Converts angle x from radians to degrees.</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;">10</td>
+<td><p><b>radians(x)</b></p>
+<p>Converts angle x from degrees to radians.</p></td>
+</tr>
+</table>
+<h2>Mathematical Constants</h2>
+<p>The module also defines two mathematical constants &minus;</p>
+<table style="text-align:center;" class="table table-bordered">
+<tr>
+<th style="text-align:center;">Constants</th>
+<th style="text-align:center;">Description</th>
+</tr>
+<tr>
+<td>pi</td>
+<td>The mathematical constant pi.</td>
+</tr>
+<tr>
+<td>e</td>
+<td>The mathematical constant e.</td>
+</tr>
+</table>
+</body>
+</html>

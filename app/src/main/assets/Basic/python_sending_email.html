@@ -1,0 +1,149 @@
+<html>
+<head>
+   <link rel="stylesheet" href="file:///android_asset/style-min.css"/>
+   <title>Python Sending Email using SMTP</title>
+</head>
+<body style="padding: 10px !important;">
+<h1>Python - Sending Email using SMTP</h1>
+<p>Simple Mail Transfer Protocol (SMTP) is a protocol, which handles sending e-mail and routing e-mail between mail servers. </p>
+<p>Python provides <b>smtplib</b> module, which defines an SMTP client session object that can be used to send mail to any Internet machine with an SMTP or ESMTP listener daemon.</p>
+<p>Here is a simple syntax to create one SMTP object, which can later be used to send an e-mail &minus;</p>
+<pre class="result notranslate">
+import smtplib
+
+smtpObj = smtplib.SMTP( [host [, port [, local_hostname]]] )
+</pre>
+<p>Here is the detail of the parameters &minus;</p>
+<ul>
+<li><p><b>host</b> &minus; This is the host running your SMTP server. You can specifiy IP address of the host or a domain name like tutorialspoint.com. This is optional argument.</p></li>
+<li><p><b>port</b> &minus; If you are providing <i>host</i> argument, then you need to specify a port, where SMTP server is listening. Usually this port would be 25.</p></li>
+<li><p><b>local_hostname</b> &minus; If your SMTP server is running on your local machine, then you can specify just <i>localhost</i> as of this option.</p></li>
+</ul>
+<p>An SMTP object has an instance method called <b>sendmail</b>, which is typically used to do the work of mailing a message. It takes three parameters &minus;</p>
+<ul>
+<li><p>The <i>sender</i>  - A string with the address of the sender.</p></li>
+<li><p>The <i>receivers</i> - A list of strings, one for each recipient.</p></li>
+<li><p>The <i>message</i> - A message as a string formatted as specified in the various RFCs.</p></li>
+</ul>
+<h2>Example</h2>
+<p>Here is a simple way to send one e-mail using Python script. Try it once &minus;</p>
+<pre class="prettyprint notranslate">
+#!/usr/bin/python
+
+import smtplib
+
+sender = 'from@fromdomain.com'
+receivers = ['to@todomain.com']
+
+message = """From: From Person &lt;from@fromdomain.com&gt;
+To: To Person &lt;to@todomain.com&gt;
+Subject: SMTP e-mail test
+
+This is a test e-mail message.
+"""
+
+try:
+   smtpObj = smtplib.SMTP('localhost')
+   smtpObj.sendmail(sender, receivers, message)         
+   print "Successfully sent email"
+except SMTPException:
+   print "Error: unable to send email"
+</pre>
+<p>Here, you have placed a basic e-mail in message, using a triple quote, taking care to format the headers correctly. An e-mail requires a <b>From</b>, <b>To</b>, and <b>Subject</b> header, separated from the body of the e-mail with a blank line.</p>
+<p>To send the mail you use <i>smtpObj</i> to connect to the SMTP server on the local machine and then use the <i>sendmail</i> method along with the message, the from address, and the destination address as parameters (even though the from and to addresses are within the e-mail itself, these aren't always used to route mail).</p>
+<p>If you are not running an SMTP server on your local machine, you can use <i>smtplib</i> client to communicate with a remote SMTP server. Unless you are using a webmail service (such as Hotmail or Yahoo! Mail), your e-mail provider must have provided you with outgoing mail server details that you can supply them, as follows &minus;</p>
+<pre class="prettyprint notranslate">
+smtplib.SMTP('mail.your-domain.com', 25)
+</pre>
+<h2>Sending an HTML e-mail using Python</h2>
+<p>When you send a text message using Python, then all the content are treated as simple text. Even if you include HTML tags in a text message, it is displayed as simple text and HTML tags will not be formatted according to HTML syntax. But Python provides option to send an HTML message as actual HTML message.</p>
+<p>While sending an e-mail message, you can specify a Mime version, content type  and character set to send an HTML e-mail.</p>
+<p><b>Example</b></p>
+<p>Following is the example to send HTML content as an e-mail. Try it once &minus;</p>
+<pre class="prettyprint notranslate">
+#!/usr/bin/python
+
+import smtplib
+
+message = """From: From Person &lt;from@fromdomain.com&gt;
+To: To Person &lt;to@todomain.com&gt;
+MIME-Version: 1.0
+Content-type: text/html
+Subject: SMTP HTML e-mail test
+
+This is an e-mail message to be sent in HTML format
+
+&lt;b&gt;This is HTML message.&lt;/b&gt;
+&lt;h1&gt;This is headline.&lt;/h1&gt;
+"""
+
+try:
+   smtpObj = smtplib.SMTP('localhost')
+   smtpObj.sendmail(sender, receivers, message)         
+   print "Successfully sent email"
+except SMTPException:
+   print "Error: unable to send email"
+</pre>
+<h2>Sending Attachments as an E-mail</h2>
+<p>To send an e-mail with mixed content requires to set <b>Content-type</b> header to <b>multipart/mixed</b>. Then, text and attachment sections can be specified within <b>boundaries</b>.</p>
+<p>A boundary is started with two hyphens followed by a unique number, which cannot appear in the message part of the e-mail. A final boundary denoting the e-mail's final section must also end with two hyphens.</p>
+<p>Attached files should be encoded with the <b>pack("m")</b> function to have base64 encoding before transmission.</p>
+<p><b>Example</b></p>
+<p>Following is the example, which sends  a file <b>/tmp/test.txt</b> as an attachment. Try it once &minus;</p>
+<pre class="prettyprint notranslate">
+#!/usr/bin/python
+
+import smtplib
+import base64
+
+filename = "/tmp/test.txt"
+
+# Read a file and encode it into base64 format
+fo = open(filename, "rb")
+filecontent = fo.read()
+encodedcontent = base64.b64encode(filecontent)  # base64
+
+sender = 'webmaster@tutorialpoint.com'
+reciever = 'amrood.admin@gmail.com'
+
+marker = "AUNIQUEMARKER"
+
+body ="""
+This is a test email to send an attachement.
+"""
+# Define the main headers.
+part1 = """From: From Person &lt;me@fromdomain.net&gt;
+To: To Person &lt;amrood.admin@gmail.com&gt;
+Subject: Sending Attachement
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary=%s
+--%s
+""" % (marker, marker)
+
+# Define the message action
+part2 = """Content-Type: text/plain
+Content-Transfer-Encoding:8bit
+
+%s
+--%s
+""" % (body,marker)
+
+# Define the attachment section
+part3 = """Content-Type: multipart/mixed; name=\"%s\"
+Content-Transfer-Encoding:base64
+Content-Disposition: attachment; filename=%s
+
+%s
+--%s--
+""" %(filename, filename, encodedcontent, marker)
+message = part1 + part2 + part3
+
+try:
+   smtpObj = smtplib.SMTP('localhost')
+   smtpObj.sendmail(sender, reciever, message)
+   print "Successfully sent email"
+except Exception:
+   print "Error: unable to send email"
+</pre>
+</body>
+</html>

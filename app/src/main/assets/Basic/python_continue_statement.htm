@@ -1,0 +1,50 @@
+<html>
+<head>
+   <link rel="stylesheet" href="file:///android_asset/style-min.css"/>
+   <title>Python Continue Statement</title>
+</head>
+<body style="padding: 10px !important;">
+<h1>Python - Continue Statement</h1>
+<p>It returns the control to the beginning of the while loop.. The <b>continue</b> statement rejects all the remaining statements in the current iteration of the loop and moves the control back to the top of the loop.</p>
+<p>The <b>continue</b> statement can be used in both <i>while</i> and <i>for</i> loops.</p>
+<h2>Syntax</h2>
+<pre class="result notranslate">
+continue
+</pre>
+<h2>Example</h2>
+<pre class="prettyprint notranslate">
+#!/usr/bin/python
+
+for letter in 'Python':     # First Example
+   if letter == 'h':
+      continue
+   print 'Current Letter :', letter
+
+var = 10                    # Second Example
+while var &gt; 0:              
+   var = var -1
+   if var == 5:
+      continue
+   print 'Current variable value :', var
+print "Good bye!"
+</pre>
+<p>When the above code is executed, it produces the following result &minus;</p>
+<pre class="result notranslate">
+Current Letter : P
+Current Letter : y
+Current Letter : t
+Current Letter : o
+Current Letter : n
+Current variable value : 9
+Current variable value : 8
+Current variable value : 7
+Current variable value : 6
+Current variable value : 4
+Current variable value : 3
+Current variable value : 2
+Current variable value : 1
+Current variable value : 0
+Good bye!
+</pre>
+</body>
+</html>

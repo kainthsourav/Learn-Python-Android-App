@@ -1,0 +1,111 @@
+<html>
+<head>
+   <link rel="stylesheet" href="file:///android_asset/style-min.css"/>
+   <title>Python While Loop Statements</title>
+</head>
+<body style="padding: 10px !important;">
+<h1>Python - While Loop Statements</h1>
+<p>A <b>while</b> loop statement in Python programming language repeatedly executes a target statement as long as a given condition is true.</p>
+<h2>Syntax</h2>
+<p>The syntax of a <b>while</b> loop in Python programming language is &minus;</p>
+<pre class="result notranslate">
+while expression:
+   statement(s)
+</pre>
+<p>Here, <b>statement(s)</b> may be a single statement or a block of statements. The <b>condition</b> may be any expression, and true is any non-zero value. The loop iterates while the condition is true.</p>
+<p>When the condition becomes false, program control passes to the line immediately following the loop.</p>
+<p>In Python, all the statements indented by the same number of character spaces after a programming construct are considered to be part of a single block of code. Python uses indentation as its method of grouping statements.</p>
+<p>Here, key point of the while loop is that the loop might not ever run. When the condition is tested and the result is false, the loop body will be skipped and the first statement after the while loop will be executed.</p>
+<h2>Example</h2>
+<pre class="prettyprint notranslate">
+#!/usr/bin/python
+
+count = 0
+while (count &lt; 9):
+   print 'The count is:', count
+   count = count + 1
+
+print "Good bye!"
+</pre>
+<p>When the above code is executed, it produces the following result &minus;</p>
+<pre class="result notranslate">
+The count is: 0
+The count is: 1
+The count is: 2
+The count is: 3
+The count is: 4
+The count is: 5
+The count is: 6
+The count is: 7
+The count is: 8
+Good bye!
+</pre>
+<p>The block here, consisting of the print and increment statements, is executed repeatedly until count is no longer less than 9. With each iteration, the current value of the index count is displayed and then increased by 1.</p>
+<h2>The Infinite Loop</h2>
+<p>A loop becomes infinite loop if a condition never becomes FALSE. You must use caution when using while loops because of the possibility that this condition never resolves to a FALSE value. This results in a loop that never ends. Such a loop is called an infinite loop.</p>
+<p>An infinite loop might be useful in client/server programming where the server needs to run continuously so that client programs can communicate with it as and when required.</p>
+<pre class="prettyprint notranslate">
+#!/usr/bin/python
+
+var = 1
+while var == 1 :  # This constructs an infinite loop
+   num = raw_input("Enter a number  :")
+   print "You entered: ", num
+
+print "Good bye!"
+</pre>
+<p>When the above code is executed, it produces the following result &minus;</p>
+<pre class="result notranslate">
+Enter a number  :20
+You entered:  20
+Enter a number  :29
+You entered:  29
+Enter a number  :3
+You entered:  3
+Enter a number between :Traceback (most recent call last):
+   File "test.py", line 5, in &lt;module&gt;
+      num = raw_input("Enter a number :")
+KeyboardInterrupt
+</pre>
+<p>Above example goes in an infinite loop and you need to use CTRL+C to exit the program.</p>
+<h2>Using else Statement with Loops</h2>
+<p>Python supports to have an <b>else</b> statement associated with a loop statement.</p>
+<ul>
+<li><p>If the <b>else</b> statement is used with a <b>for</b> loop, the <b>else</b> statement is executed when the loop has exhausted iterating the list.</p></li>
+<li><p>If the <b>else</b> statement is used with a <b>while</b> loop, the <b>else</b> statement is executed when the condition becomes false.</p></li>
+</ul>
+<p>The following example illustrates the combination of an else statement with a while statement that prints a number as long as it is less than 5, otherwise else statement gets executed.</p>
+<pre class="prettyprint notranslate">
+#!/usr/bin/python
+
+count = 0
+while count &lt; 5:
+   print count, " is  less than 5"
+   count = count + 1
+else:
+   print count, " is not less than 5"
+</pre>
+<p>When the above code is executed, it produces the following result &minus;</p>
+<pre class="result notranslate">
+0 is less than 5
+1 is less than 5
+2 is less than 5
+3 is less than 5
+4 is less than 5
+5 is not less than 5
+</pre>
+<h2>Single Statement Suites</h2>
+<p>Similar to the <b>if</b> statement syntax, if your <b>while</b> clause consists only of a single statement, it may be placed on the same line as the while header.</p>
+<p>Here is the syntax and example of a <b>one-line while</b> clause &minus;</p>
+<pre class="prettyprint notranslate">
+#!/usr/bin/python
+
+flag = 1
+
+while (flag): print 'Given flag is really true!'
+
+print "Good bye!"
+</pre>
+<p>It is better not try above example because it goes into infinite loop and you need to press CTRL+C keys to exit.</p>
+</body>
+</html>

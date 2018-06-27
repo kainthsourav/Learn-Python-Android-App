@@ -1,0 +1,1498 @@
+<html>
+<head>
+    <link rel="stylesheet" href="file:///android_asset/style-min.css"/>
+    <title>Python Interview Questions</title>
+</head>
+<body style="padding: 10px !important;">
+<h1>Interview Questions</h1>
+<p><b>What is Python?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+Python is a high-level, interpreted, interactive and object-oriented scripting language. Python is designed to be highly readable. It uses English keywords frequently where as other languages use punctuation, and it has fewer syntactical constructions than other languages.
+</pre>
+<p><b>Name some of the features of Python?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+Following are some of the salient features of python &minus;
+
+It supports functional and structured programming methods as well as OOP.
+It can be used as a scripting language or can be compiled to byte-code for building large applications.
+It provides very high-level dynamic data types and supports dynamic type checking.
+It supports automatic garbage collection.
+It can be easily integrated with C, C++, COM, ActiveX, CORBA, and Java.
+</pre>
+<p><b>What is the purpose of PYTHONPATH environment variable?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+PYTHONPATH - It has a role similar to PATH. This variable tells the Python interpreter where to locate the module files imported into a program. It should include the Python source library directory and the directories containing Python source code. PYTHONPATH is sometimes preset by the Python installer.
+</pre>
+<p><b>What is the purpose of PYTHONSTARTUP environment variable?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+PYTHONSTARTUP - It contains the path of an initialization file containing Python source code. It is executed every time you start the interpreter. It is named as .pythonrc.py in Unix and it contains commands that load utilities or modify PYTHONPATH.
+</pre>
+<p><b>What is the purpose of PYTHONCASEOK environment variable?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+PYTHONCASEOK  - It is used in Windows to instruct Python to find the first case-insensitive match in an import statement. Set this variable to any value to activate it.
+</pre>
+<p><b>What is the purpose of PYTHONHOME environment variable?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+PYTHONHOME - It is an alternative module search path. It is usually embedded in the PYTHONSTARTUP or PYTHONPATH directories to make switching module libraries easy.
+</pre>
+<p><b>Is python a case sensitive language?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+Yes! Python is a case sensitive programming language.
+</pre>
+<p><b>What are the supported data types in Python?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+Python has five standard data types &minus;
+
+Numbers
+String
+List
+Tuple
+Dictionary
+</pre>
+<p><b>What is the output of print str if str = 'Hello World!'?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+It will print complete string. Output would be Hello World!.
+</pre>
+<p><b>What is the output of print str[0] if str = 'Hello World!'?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+It will print first character of the string. Output would be H.
+</pre>
+<p><b>What is the output of print str[2:5] if str = 'Hello World!'?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+It will print characters starting from 3<sup>rd</sup> to 5<sup>th</sup>. Output would be llo.
+</pre>
+<p><b>What is the output of print str[2:] if str = 'Hello World!'?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+It will print characters starting from 3<sup>rd</sup> character. Output would be llo World!.
+</pre>
+<p><b>What is the output of print str * 2 if str = 'Hello World!'?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+It will print string two times. Output would be Hello World!Hello World!.
+</pre>
+<p><b>What is the output of print str + "TEST" if str = 'Hello World!'?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+It will print concatenated string. Output would be Hello World!TEST.
+</pre>
+<p><b>What is the output of print list if list = [ 'abcd', 786 , 2.23, 'john', 70.2 ]?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+It will print concatenated lists. Output would be [ 'abcd', 786 , 2.23, 'john', 70.2 ].
+</pre>
+<p><b>What is the output of print list[0] if list = [ 'abcd', 786 , 2.23, 'john', 70.2 ]?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+It will print first element of the list. Output would be abcd.
+</pre>
+<p><b>What is the output of print list[1:3] if list = [ 'abcd', 786 , 2.23, 'john', 70.2 ]?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+It will print elements starting from 2<sup>nd</sup> till 3<sup>rd</sup>. Output would be [786, 2.23].
+</pre>
+<p><b>What is the output of print list[2:] if list = [ 'abcd', 786 , 2.23, 'john', 70.2 ]?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+It will print elements starting from 3rd element. Output would be [2.23, 'john', 70.200000000000003].
+</pre>
+<p><b>What is the output of print tinylist * 2 if tinylist = [123, 'john']?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+It will print list two times. Output would be [123, 'john', 123, 'john'].
+</pre>
+<p><b>What is the output of print list + tinylist * 2 if list = [ 'abcd', 786 , 2.23, 'john', 70.2 ] and tinylist = [123, 'john']?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+It will print concatenated lists. Output would be ['abcd', 786, 2.23, 'john', 70.2, 123, 'john', 123, 'john'].
+</pre>
+<p><b>What are tuples in Python?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+A tuple is another sequence data type that is similar to the list. A tuple consists of a number of values separated by commas. Unlike lists, however, tuples are enclosed within parentheses.
+</pre>
+<p><b>What is the difference between tuples and lists in Python?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+The main differences between lists and tuples are &minus; Lists are enclosed in brackets ( [ ] ) and their elements and size can be changed, while tuples are enclosed in parentheses ( ( ) ) and cannot be updated. Tuples can be thought of as read-only lists.
+</pre>
+<p><b>What is the output of print tuple if tuple = ( 'abcd', 786 , 2.23, 'john', 70.2 )?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+It will print complete tuple. Output would be ('abcd', 786, 2.23, 'john', 70.200000000000003).
+</pre>
+<p><b>What is the output of print tuple[0] if tuple = ( 'abcd', 786 , 2.23, 'john', 70.2 )?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+It will print first element of the tuple. Output would be abcd.
+</pre>
+<p><b>What is the output of print tuple[1:3] if tuple = ( 'abcd', 786 , 2.23, 'john', 70.2 )?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+It will print elements starting from 2<sup>nd</sup> till 3<sup>rd</sup>. Output would be (786, 2.23).
+</pre>
+<p><b>What is the output of print tuple[2:] if tuple = ( 'abcd', 786 , 2.23, 'john', 70.2 )?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+It will print elements starting from 3<sup>rd</sup> element. Output would be (2.23, 'john', 70.200000000000003).
+</pre>
+<p><b>What is the output of print tinytuple * 2 if tinytuple = (123, 'john')?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+It will print tuple two times. Output would be (123, 'john', 123, 'john').
+</pre>
+<p><b>What is the output of print tuple + tinytuple if tuple = ( 'abcd', 786 , 2.23, 'john', 70.2 ) and tinytuple = (123, 'john')?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+It will print concatenated tuples. Output would be ('abcd', 786, 2.23, 'john', 70.200000000000003, 123, 'john').
+</pre>
+<p><b>What are Python's dictionaries?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+Python's dictionaries are kind of hash table type. They work like associative arrays or hashes found in Perl and consist of key-value pairs. A dictionary key can be almost any Python type, but are usually numbers or strings. Values, on the other hand, can be any arbitrary Python object.
+</pre>
+<p><b>How will you create a dictionary in python?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+Dictionaries are enclosed by curly braces ({ }) and values can be assigned and accessed using square braces ([]).
+
+dict = {}
+dict['one'] = "This is one"
+dict[2]     = "This is two"
+tinydict = {'name': 'john','code':6734, 'dept': 'sales'}
+</pre>
+<p><b>How will you get all the keys from the dictionary?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+Using dictionary.keys() function, we can get all the keys from the dictionary object.
+
+print dict.keys()   # Prints all the keys
+</pre>
+<p><b>How will you get all the values from the dictionary?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+Using dictionary.values() function, we can get all the values from the dictionary object.
+
+print dict.values()   # Prints all the values
+</pre>
+<p><b>How will you convert a string to an int in python?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+int(x [,base]) - Converts x to an integer. base specifies the base if x is a string.
+</pre>
+<p><b>How will you convert a string to a long in python?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+long(x [,base] ) - Converts x to a long integer. base specifies the base if x is a string.
+</pre>
+<p><b>How will you convert a string to a float in python?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+float(x) - Converts x to a floating-point number.
+</pre>
+<p><b>How will you convert a object to a string in python?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+str(x) - Converts object x to a string representation.
+</pre>
+<p><b>How will you convert a object to a regular expression in python?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+repr(x) - Converts object x to an expression string.
+</pre>
+<p><b>How will you convert a String to an object in python?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+eval(str) - Evaluates a string and returns an object.
+</pre>
+<p><b>How will you convert a string to a tuple in python?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+tuple(s) - Converts s to a tuple.
+</pre>
+<p><b>How will you convert a string to a list in python?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+list(s) - Converts s to a list.
+</pre>
+<p><b>How will you convert a string to a set in python?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+set(s) - Converts s to a set.
+</pre>
+<p><b>How will you create a dictionary using tuples in python?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+dict(d) - Creates a dictionary. d must be a sequence of (key,value) tuples.
+</pre>
+<p><b>How will you convert a string to a frozen set in python?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+frozenset(s) - Converts s to a frozen set.
+</pre>
+<p><b>How will you convert an integer to a character in python?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+chr(x) - Converts an integer to a character.
+</pre>
+<p><b>How will you convert an integer to an unicode character in python?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+unichr(x) - Converts an integer to a Unicode character.
+</pre>
+<p><b>How will you convert a single character to its integer value in python?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+ord(x) - Converts a single character to its integer value.
+</pre>
+<p><b>How will you convert an integer to hexadecimal string in python?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+hex(x) - Converts an integer to a hexadecimal string.
+</pre>
+<p><b>How will you convert an integer to octal string in python?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+oct(x) - Converts an integer to an octal string.
+</pre>
+<p><b>What is the purpose of ** operator?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+** Exponent - Performs exponential (power) calculation on operators. a**b = 10 to the power 20 if a = 10 and b = 20.
+</pre>
+<p><b>What is the purpose of // operator?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+// Floor Division - The division of operands where the result is the quotient in which the digits after the decimal point are removed.
+</pre>
+<p><b>What is the purpose of is operator?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+is - Evaluates to true if the variables on either side of the operator point to the same object and false otherwise. x is y, here is results in 1 if id(x) equals id(y).
+</pre>
+<p><b>What is the purpose of not in operator?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+not in - Evaluates to true if it does not finds a variable in the specified sequence and false otherwise. x not in y, here not in results in a 1 if x is not a member of sequence y.
+</pre>
+<p><b>What is the purpose break statement in python?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+break statement - Terminates the loop statement and transfers execution to the statement immediately following the loop.
+</pre>
+<p><b>What is the purpose continue statement in python?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+continue statement - Causes the loop to skip the remainder of its body and immediately retest its condition prior to reiterating.
+</pre>
+<p><b>What is the purpose pass statement in python?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+pass statement - The pass statement in Python is used when a statement is required syntactically but you do not want any command or code to execute.
+</pre>
+<p><b>How can you pick a random item from a list or tuple?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+choice(seq) - Returns a random item from a list, tuple, or string.
+</pre>
+<p><b>How can you pick a random item from a range?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+randrange ([start,] stop [,step]) - returns a randomly selected element from range(start, stop, step).
+</pre>
+<p><b>How can you get a random number in python?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+random() - returns a random float r, such that 0 is less than or equal to r and r is less than 1.
+</pre>
+<p><b>How will you set the starting value in generating random numbers?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+seed([x]) - Sets the integer starting value used in generating random numbers. Call this function before calling any other random module function. Returns None.
+</pre>
+<p><b>How will you randomizes the items of a list in place?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+shuffle(lst) - Randomizes the items of a list in place. Returns None.
+</pre>
+<p><b>How will you capitalizes first letter of string?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+capitalize() - Capitalizes first letter of string.
+</pre>
+<p><b>How will you check in a string that all characters are alphanumeric?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+isalnum() - Returns true if string has at least 1 character and all characters are alphanumeric and false otherwise.
+</pre>
+<p><b>How will you check in a string that all characters are digits?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+isdigit() - Returns true if string contains only digits and false otherwise.
+</pre>
+<p><b>How will you check in a string that all characters are in lowercase?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+islower() - Returns true if string has at least 1 cased character and all cased characters are in lowercase and false otherwise.
+</pre>
+<p><b>How will you check in a string that all characters are numerics?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+isnumeric() - Returns true if a unicode string contains only numeric characters and false otherwise.
+</pre>
+<p><b>How will you check in a string that all characters are whitespaces?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+isspace() - Returns true if string contains only whitespace characters and false otherwise.
+</pre>
+<p><b>How will you check in a string that it is properly titlecased?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+istitle() - Returns true if string is properly "titlecased" and false otherwise.
+</pre>
+<p><b>How will you check in a string that all characters are in uppercase?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+isupper() - Returns true if string has at least one cased character and all cased characters are in uppercase and false otherwise.
+</pre>
+<p><b>How will you merge elements in a sequence?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+join(seq) - Merges (concatenates) the string representations of elements in sequence seq into a string, with separator string.
+</pre>
+<p><b>How will you get the length of the string?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+len(string) - Returns the length of the string.
+</pre>
+<p><b>How will you get a space-padded string with the original string left-justified to a total of width columns? </b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+ljust(width[, fillchar]) - Returns a space-padded string with the original string left-justified to a total of width columns.
+</pre>
+<p><b>How will you convert a string to all lowercase?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+lower() - Converts all uppercase letters in string to lowercase.
+</pre>
+<p><b>How will you remove all leading whitespace in string?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+lstrip() - Removes all leading whitespace in string.
+</pre>
+<p><b>How will you get the max alphabetical character from the string?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+max(str) - Returns the max alphabetical character from the string str.
+</pre>
+<p><b>How will you get the min alphabetical character from the string?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+min(str) - Returns the min alphabetical character from the string str.
+</pre>
+<p><b>How will you replaces all occurrences of old substring in string with new string?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+replace(old, new [, max]) - Replaces all occurrences of old in string with new or at most max occurrences if max given.
+</pre>
+<p><b>How will you remove all leading and trailing whitespace in string?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+strip([chars]) - Performs both lstrip() and rstrip() on string.
+</pre>
+<p><b>How will you change case for all letters in string?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+swapcase() - Inverts case for all letters in string.
+</pre>
+<p><b>How will you get titlecased version of string?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+title() - Returns "titlecased" version of string, that is, all words begin with uppercase and the rest are lowercase.
+</pre>
+<p><b>How will you convert a string to all uppercase?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+upper() - Converts all lowercase letters in string to uppercase.
+</pre>
+<p><b>How will you check in a string that all characters are decimal?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+isdecimal() - Returns true if a unicode string contains only decimal characters and false otherwise.
+</pre>
+<p><b>What is the difference between del() and remove() methods of list?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+To remove a list element, you can use either the del statement if you know exactly which element(s) you are deleting or the remove() method if you do not know.
+</pre>
+<p><b>What is the output of len([1, 2, 3])?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+3
+</pre>
+<p><b>What is the output of [1, 2, 3] + [4, 5, 6]?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+[1, 2, 3, 4, 5, 6]
+</pre>
+<p><b>What is the output of ['Hi!'] * 4?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+['Hi!', 'Hi!', 'Hi!', 'Hi!']
+</pre>
+<p><b>What is the output of 3 in [1, 2, 3]?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+True
+</pre>
+<p><b>What is the output of for x in [1, 2, 3]: print x?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+1 2 3
+</pre>
+<p><b>What is the output of L[2] if L = [1,2,3]?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+3, Offsets start at zero.
+</pre>
+<p><b>What is the output of L[-2] if L = [1,2,3]?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+L[-1] = 3, L[-2] = 2, L[-3] = 1
+</pre>
+<p><b>What is the output of L[1:] if L = [1,2,3]?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+2, 3, Slicing fetches sections.
+</pre>
+<p><b>How will you compare two lists?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+cmp(list1, list2) - Compares elements of both lists.
+</pre>
+<p><b>How will you get the length of a list?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+len(list) - Gives the total length of the list.
+</pre>
+<p><b>How will you get the max valued item of a list?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+max(list) - Returns item from the list with max value.
+</pre>
+<p><b>How will you get the min valued item of a list?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+min(list) - Returns item from the list with min value.
+</pre>
+<p><b>How will you get the index of an object in a list?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+list.index(obj) - Returns the lowest index in list that obj appears.
+</pre>
+<p><b>How will you insert an object at given index in a list?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+list.insert(index, obj) - Inserts object obj into list at offset index.
+</pre>
+<p><b>How will you remove last object from a list?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+list.pop(obj = list[-1]) - Removes and returns last object or obj from list.
+</pre>
+<p><b>How will you remove an object from a list?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+list.remove(obj) - Removes object obj from list.
+</pre>
+<p><b>How will you reverse a list?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+list.reverse() - Reverses objects of list in place.
+</pre>
+<p><b>How will you sort a list?</b></p>
+<p>Answer :</p>
+<pre class="result interview_no">
+list.sort([func]) - Sorts objects of list, use compare func if given.
+</pre>
+<p><b>What is the output of the following code?</b></p>
+<pre class="prettyprint notranslate">
+'Tutorials Point' [100:200]?
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+' '
+
+Slicing will never give us an error even if we give it too large of an index for the string. It will just return the widest matching slice it can.
+</pre>
+<p><b>What is output for following code?</b></p>
+<pre class="prettyprint notranslate">
+33 == 33.0
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+True
+
+comparison operator evaluates true and false. And in python we need not specify whether the number is int or float.
+</pre>
+<p><b>What is output for following code?</b></p>
+<pre class="prettyprint notranslate">
+' ' in 'python' ?
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+True
+
+To strings connected by ‘in’ operator gives true and false.
+</pre>
+<p><b>What is output for following code?</b></p>
+<pre class="prettyprint notranslate">
+raining'. find('z') ?
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+-1
+
+If the string is not found by method find() , it returns the integer -1.
+</pre>
+<p><b>What is output for following code?</b></p>
+<pre class="prettyprint notranslate">
+'search'. find('S') ?
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+-1
+
+The method find() is case sensitive.
+</pre>
+<p><b>What is output for following code?</b></p>
+<pre class="prettyprint notranslate">
+S = [['him', 'sell'], [90, 28, 43]]
+S[0][1][1]
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+'e'
+
+List can contain other list values.
+So, in this question S[0] gives ['him', 'sell'], S[0][1] gives ‘sell’ and S[0][1][1] gives ‘e’.
+Remember, the index in python starts with ‘0’.
+</pre>
+<p><b>What is output for following code?</b></p>
+<pre class="prettyprint notranslate">
+a = ['he', 'she', 'we']
+' '.join(a)
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+'heshewe'
+
+The method join() takes list of string as input and returns string as output. It removes ', ' and add the given string with join to the list.
+</pre>
+<p><b>What is output for following code?</b></p>
+<pre class="prettyprint notranslate">
+a = ['hat', 'mat', 'rat']
+'rhyme'.join(a)
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+‘hatrhymematrhyme rat’
+
+The method join() takes list of string as input and returns string as output. It removes ‘,’ and add the given string with join to the list.
+</pre>
+<p><b>What is output of following code?</b></p>
+<pre class="prettyprint notranslate">
+a = (1, 2)
+a[0] +=1
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+Type Error
+
+‘tuple’ object does not support item assignment because a tuple is immutable.
+</pre>
+<p><b>What is output for following code?</b></p>
+<pre class="prettyprint notranslate">
+y = [4, 5,1j]
+y.sort()
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+Type Error
+
+we cannot compare complex numbers with numbers, so the output results in type error stating that complex numbers cannot be compared with &lt;,&gt;,=.
+</pre>
+<p><b>What is output of following code?</b></p>
+<pre class="prettyprint notranslate">
+num = 3
+while True:
+   if (num%0o12 == 0):
+      break
+print(num)
+num += 1
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+3 4 5 6 7 8 9
+
+we are getting output 3 to 9 because 0o12 is octal number.
+</pre>
+<p><b>What is output of following code?</b></p>
+<pre class="prettyprint notranslate">
+b = [11,13,15,17,19,21]
+ptint(b[::2])
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+[11,15,19]
+
+b[::2] :- it iterates over the list with ‘2’ increments
+</pre>
+<p><b>What is the output of following code?</b></p>
+<pre class="prettyprint notranslate">
+[ (a,b) for a in range(3) for b in range(a) ]
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+[ (1,0),(2,0),(2,1)]
+
+This is nested for loop. The output of first for loop will be the value for the next loop.
+</pre>
+<p><b>What is output of following code?</b></p>
+<pre class="prettyprint notranslate">
+x = 2
+y = 10
+x * = y * x + 1
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+42
+
+x * = y * x + 1 means x = x * (y * x + 1)
+</pre>
+<p><b>What is output of following code?</b></p>
+<pre class="prettyprint notranslate">
+print('hijk'.partition('ab'))
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+('hijk', ' ', ' ')
+
+Since there are no separators in the given string so the output is the same string.
+</pre>
+<p><b>When the given code is executed how many times ' 'you are learning python ' ' will be printed.?</b></p>
+<pre class="prettyprint notranslate">
+a = 0
+while a&lt;10:
+… print(''you are learning python'')
+… pass
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+Infinite number of times.
+
+The loop will execute infinite number of times because there is no statement specified for end of loop and pass indicates nothing is to be done.
+</pre>
+<p><b>What is output of following code?</b></p>
+<pre class="prettyprint notranslate">
+s = 0
+for d in range(0, 5, 0.1):
+… s += d
+… print(s)
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+Syntax Error and Type Error
+
+we will get type error during runtime as float object cannot be interpreted as integer. Here 0.1 is the float value.
+</pre>
+<p><b>What is output of following code?</b></p>
+<pre class="prettyprint notranslate">
+def func(x, ans):
+   if(x==0):
+      return 0
+   else: 
+      return func(x-1, x+ans) 
+print(func(2,0))
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+0
+</pre>
+<p><b>What is output of following code?</b></p>
+<pre class="prettyprint notranslate">
+def func(n):
+   if(n==1):
+      return 1;
+   else:
+      return(n+func(n-1))
+print(func(4))
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+10
+</pre>
+<p><b>What is output of following code?</b></p>
+<pre class="prettyprint notranslate">
+2 * 2 **3
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+16
+
+2**3 gives 2*2*2 i.e. 8, then 2*8 gives 16, since order of precedence is ** then*. ** implies ‘‘ raise to power’’.
+</pre>
+<p><b>What is output of following code?</b></p>
+<pre class="prettyprint notranslate">
+min(''hello world'')
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+a blank space character
+
+python considers a blank space character as minimum value in a string.
+</pre>
+<p><b>What is output of following code?</b></p>
+<pre class="prettyprint notranslate">
+max(''please help '')
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+s
+
+python considers z as maximum value in the string and a blank space character as minimum value. So it goes like blank space, a to z as minimum to maximum.
+</pre>
+<p><b>What is output of following code?</b></p>
+<pre class="prettyprint notranslate">
+s = ''mnopqr ''
+i = ''m ''
+while i in s:
+   print('i', end= '' '')
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+i i i i i i i i……..
+</pre>
+<p><b>what is output of following code?</b></p>
+<pre class="prettyprint notranslate">
+class Count:
+   def __init__(self, count=0):
+      self.__count=count
+a = Count(2)
+b = Count(2)
+print(id(a) == id(b), end = '' '')
+
+c= ''hello''
+d= ''hello''
+print(id(c) == id(d))
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+False True
+
+The objects with same contents share the same object in the python library but this is not true for custom-defined immutable classes.
+</pre>
+<p><b>What is output of following code?</b></p>
+<pre class="prettyprint notranslate">
+l = [1,2,6,5,7,8]
+l.insert(9)
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+Type Error
+
+listname.insert(x,y) method is used to insert a item at certain position in a list. x defines position at which the element will be added and y defines the element to be added in the list. And insert function takes exactly two arguments else it results in type error.
+</pre>
+<p><b>What is output of following?</b></p>
+<pre class="prettyprint notranslate">
+print(''abbzxyzxzxabb''.count(‘abb’,-10,-1))
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+0
+
+It Counts the number of times the substring ‘abb’ is present starting from position 2 and ending at position 11 in the given string.
+</pre>
+<p><b>What is output of following?</b></p>
+<pre class="prettyprint notranslate">
+print('any'.encode())
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+b’any’
+
+encode() returns bytes object.
+</pre>
+<p><b>What will be the output of the following code?</b></p>
+<pre class="prettyprint notranslate">
+def total(initial = 5, *num, **key):
+   count = initial
+   for n in num:
+      count+=n
+   for k in key:
+      count+=key[k]
+   return count
+print(total(100,2,3, clouds = 50, stars = 100))
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+255
+
+It takes initial value as 100 now. And adds 2, 3, 50 and 100 to it as according to code.
+</pre>
+<p><b>What is the output of the code?</b></p>
+<pre class="prettyprint notranslate">
+def f():
+   global z
+   print('z is: ', z)
+   z = 50
+   print('new value of global z is: ', z)
+
+f()
+   print('Value of z is: ', z)
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+new value of global z is: 50
+value of z is 50
+
+Here in the above code ‘global’ keyword is used to state that ‘z’ is global variable. So when we assign a value to z in the function then the new assigned value is reflected whenever we use the value of ‘z’ in the main block or outside the function.
+</pre>
+<p><b>Find the output of the code?</b></p>
+<pre class="prettyprint notranslate">
+def f(a, b = 1, c = 2):
+   print('a is: ',a, 'b is: ', b, 'c is: ', c)
+f(2, c = 2)
+f(c = 100, a = 110)
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+a is: 2 b is: 1 c is: 2
+a is: 110 b is: 1 c is: 100
+
+Value of Arguments is passed to the parameters in order of their sequence.
+</pre>
+<p><b>What is the output of the following code?</b></p>
+<pre class="prettyprint notranslate">
+import math
+ 
+   def main():
+      math.cos(math.pi)
+main()
+   print(main())
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+None
+
+None is printed because function does not return the value.
+</pre>
+<p><b>What is the output of the following code?</b></p>
+<pre class="prettyprint notranslate">
+def nprint(message, n):
+while(n &gt; 0):
+   print(message)
+n-=1
+nprint('z', 5)
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+Infinite Loop
+
+Because decrementing condition of ‘n’ is not present in the while loop.
+</pre>
+<p><b>What is the output of the following code?</b></p>
+<pre class="prettyprint notranslate">
+def f(x = 100, y = 100): 
+   return(x+y, x-y) 
+x, y = f(y = 200, x = 100) 
+print(x, y) 
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+300  -100
+
+In variable y functions runs and gives the output of x + y and x - y i.e 300 and -100 respectively. Then assignment operator is used to assign the value of x and y.
+</pre>
+<p><b>What is the output of the following code?</b></p>
+<pre class="prettyprint notranslate">
+eval(''1 + 3 * 2'')
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+7
+
+Eval is a method used to evaluate the values entered in the braces.
+</pre>
+<p><b>Analyze the given below code?</b></p>
+<pre class="prettyprint notranslate">
+class Demo: 
+   def __init__(self,d): 
+      self.d = d 
+   def print(self): 
+      print(d)  
+a = Demo(''Hello'') 
+a.print()
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+Program will print ‘Hello’ if we change print(d) to print(self.d).
+
+D stores the argument value here. Thus when we call the class ‘‘Hello’’ is passed as an argument which is stored in the variable d.
+</pre>
+<p><b>Which is more accurate for the following declaration?</b></p>
+<pre class="prettyprint notranslate">
+x = Circle()
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+x contains a reference to a Circle object.
+
+x is the object created by the constructor of the class Circle().
+</pre>
+<p><b>What is the output of the following code?</b></p>
+<pre class="prettyprint notranslate">
+s = ''\t\t\t\n\nTutorialsPoint\n\n\n\t\t\t''
+s.strip()
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+'TutorialsPoint'
+
+Strip method is used to remove all the newline and tab spaces code in the string.
+</pre>
+<p><b>Guess the output?</b></p>
+<pre class="prettyprint notranslate">
+def main(): 
+   try: 
+      func() 
+      print(''print this after function call'') 
+   except ZeroDivisionError: 
+      print('Divided By Zero! Not Possible! ') 
+   except: 
+      print('Its an Exception!') 
+def func(): 
+   print(1/0) 
+main()
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+‘Divided By Zero! Not possible!’
+
+The function ‘func’ will not run because it contains an exception. So in try and expect block. The function called under try will not run and will move to except block which defines the type of exception present in the function ‘func’. Thus block of statements present in except ZeroDivisionError is printed.
+</pre>
+<p><b>What is the output of the code?</b></p>
+<pre class="prettyprint notranslate">
+try: 
+   list = 5*[0]+5*[10] 
+   x = list[9] 
+   print(''Done!'') 
+except IndexError: 
+   print(''Index out of Bond! '') 
+else: 
+   print(''Nothing is wrong!'') 
+finally: 
+   print(''Finally block!'')
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+‘Done!’ follow by ‘Nothing is wrong!’ followed by ‘Finally block’.
+
+In the above Try block we make a list of total 10 elements by adding 5 times zero and 5 times 10. Thus when we try to find out the element at index 9 no error is raised by Python.
+</pre>
+<p><b>What happens in the below code?</b></p>
+<pre class="prettyprint notranslate">
+class A: 
+   def __init__(self, i = 100): 
+      self.i = i 
+class B(A): 
+   def __init__(self,j = 0): 
+      self.j = j 
+def main(): 
+   b = B() 
+   print(b.i) 
+   print(b.j) 
+main()
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+Class B is inheriting class A but the data field ‘i’ in A cannot be inherited.
+
+Reason being that i is initiated with self thus making it a instantiate variable of that class which cannot be inherited by the above way.
+</pre>
+<p><b>What is the output of the following code?</b></p>
+<pre class="prettyprint notranslate">
+class P: 
+   def __init__(self): 
+      self.__x = 100 
+      self.y = 200 
+   def print(self): 
+      print(self.__x, self.y)  
+class C(P): 
+   def __init__(self): 
+      super().__init__() 
+      self.__x = 300 
+      self.y = 400  
+d = C() 
+d.print()
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+100 400
+
+In the above code x is a private variable declared in the class P. Thus value of x cannot be changed in the class C which inherits class P. But y is not a private variable thus its value can be changed.
+</pre>
+<p><b>Analyze the code?</b></p>
+<pre class="prettyprint notranslate">
+print(''Recursive Function'') 
+def factorial(n): 
+   return(n*factorial(n-1))  
+factorial(4)
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+Function runs infinitely and causes a StackOverflowError.
+
+There is no condition in the code to stop the function.
+</pre>
+<p><b>What is the output of the code?</b></p>
+<pre class="prettyprint notranslate">
+def rev_func(x,length): 
+   print(x[length-1],end = '' '') 
+   rev_func(x,length-1) 
+x = [11, 12, 13, 14, 15] 
+rev_func(x,5) 
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+Program displays 15 14 13 12 11 and then raises an index out of range exception.
+
+In the print statement of rev_func we use the index value of list x. We decrement the value of length of function because it becomes the index of x in the print statement.
+</pre>
+<p><b>Discuss the outcome of the code?</b></p>
+<pre class="prettyprint notranslate">
+def func1(n): 
+   if(n == 0): 
+      return 0 
+   else: 
+      return(n+func1(n-1)) 
+def func2(n, result): 
+   if(n == 0): 
+      return(result) 
+   else: 
+      return(func2(n-1, n+result))  
+print(func1(4)) 
+print(func2(4,0))
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+Func1 and Func2 are tail recursions.
+
+A function call is said to be tail recursive if there is nothing to do after the function returns except return its value.
+</pre>
+<p><b>Suppose we are given with two sets(s1&amp;s2) then what is the output of the code?</b></p>
+<pre class="prettyprint notranslate">
+S1 + S2 
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+It is an illegal command.
+
++ Operator cannot be operated on the sets.
+</pre>
+<p><b>Suppose you are given a set(s1={1,2,3}) then what is the output for the code?</b></p>
+<pre class="prettyprint notranslate">
+2 * s1?
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+Illegal
+
+* cannot be operated on the sets.
+</pre>
+<p><b>What is the value of a, b, c in the given below code?</b></p>
+<pre class="prettyprint notranslate">
+a, b = c = 2 + 2, ''TutorialsPoint''
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+- a = 4
+b = 'TutorialsPoint'
+c = 4, 'TutorialsPoint'
+</pre>
+<p><b>What will be the output of the following code?</b></p>
+<pre class="prettyprint notranslate">
+print(type(1/2))
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+&lt;class 'float'&gt;
+
+Output of &frac12; is 0.5.
+</pre>
+<p><b>What will be the output of the following code?</b></p>
+<pre class="prettyprint notranslate">
+minidict = { 'name': 'TutorialsPoint', 'name': 'website'}
+print(minidict['name'])
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+Website
+
+Dictionary gets updated by the above code as the key has been assigned a new value.
+</pre>
+<p><b>What will be the output of the following code?</b></p>
+<pre class="prettyprint notranslate">
+def f():
+   pass
+print(type(f()))
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+&lt;type 'NoneType '&gt;
+
+Here the argument of the ‘type()’ class is a return value of a function call. Thus ‘pass’ keyword is used it will return ‘NoneType’.
+</pre>
+<p><b>Find the Error in the below code?</b></p>
+<pre class="prettyprint notranslate">
+print(''Find the Error in the below code'');
+   b = 19
+print(''Value of b is: '', b);
+print(''Adding 2 to b will give:'', b+2);
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+Error: Indentation Error in print command. (3rd line of the program).
+
+Proper indentation is necessary to run any python code.
+</pre>
+<p><b>Find the missing code in the following program for the following output?</b></p>
+<p>Input :</p>
+<pre class="prettyprint notranslate">
+for i in range(5):
+   Missing code
+</pre>
+<p>Output</p>
+<pre class="result notranslate">
+0 1 2 3 4
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+print(i, end = '' '')
+</pre>
+<p><b>What will be the output of the following code?</b></p>
+<pre class="prettyprint notranslate">
+def total(initial = 5, *num, **key):
+   count = initial
+for n in num:
+   count+=n
+for k in key:
+   count+=key[k]
+   return count
+print(total(100,2,3, clouds = 50, stars = 100))
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+255
+</pre>
+<p><b>What will be the output of the below given code?</b></p>
+<pre class="prettyprint notranslate">
+colors = [''white'', ''Black'', ''Grey '']
+x = ''Red'' not in colors
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+True
+</pre>
+<p><b>There are different basic operators in python and work according to the order of their precedence.</b></p>
+<p>i) Division</p>
+<p>ii) Multiplication</p>
+<p>iii) Parentheses</p>
+<p>iv) Exponential</p>
+<p>v) Addition</p>
+<p>vi) Subtraction</p>
+<p>Answer :</p>
+<pre class="result interview_no">
+iii, iv, i, ii, v, vi.
+</pre>
+<p><b>What is the output of the following code?</b></p>
+<pre class="prettyprint notranslate">
+print(0.1+0.2==0.3)
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+False
+</pre>
+<p><b>What will be the value of x?</b></p>
+<pre class="prettyprint notranslate">
+x = ~~~~19
+print(x)
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+19
+
+‘~number’ is equivalent to –(x+1).
+</pre>
+<p><b>What will be the output of the following code?</b></p>
+<pre class="prettyprint notranslate">
+i = 1
+   while True:
+      if(1%2==0):
+         break
+      print(i)
+   i += 2
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+1 3 5 7 9 ...
+
+The loop will never terminate because the value ‘i’ always an odd number.
+</pre>
+<p><b>What will be the output of the code?</b></p>
+<pre class="prettyprint notranslate">
+x = 1
+while False:
+   if(x%2 == 0):
+      break
+   print(i)
+   i+=2
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+The flow of control of the code will not enter in the while loop because of the ‘False’ keyword present before the colons of while loop.
+</pre>
+<p><b>What will be the output of the following code?</b></p>
+<pre class="prettyprint notranslate">
+~~~~~19
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+-20
+
+‘~number’ is equivalent to –(x+1).
+</pre>
+<p><b>What will be the output of the code?</b></p>
+<pre class="prettyprint notranslate">
+q = 'TutorialsPoint'
+r = 'T'
+while r in q:
+   print('r', end= '' '')
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+r r r r r r r r...
+
+The condition will always evaluate to true. And in print string ‘r’ is given so the output will be r r r r r infinite times.
+</pre>
+<p><b>Find the missing term (?) for the following output of the given code?</b></p>
+<p>Code :</p>
+<pre class="prettyprint notranslate">
+q = 'vwxyz'
+for i in range(len(q)):
+   print(?)
+   q = ‘?’
+</pre>
+<p>Output</p>
+<pre class="result notranslate">
+vwxyz
+v
+v
+v
+v
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+- print(q)
+q = 'v'
+</pre>
+<p><b>What can be the code to loop over the keys of a dictionary?</b></p>
+<pre class="prettyprint notranslate">
+My_dictionary = {0: 'a', 1: 'b', 2: 'c'}
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+for i in My_Dictionary:
+print(i)
+</pre>
+<p><b>What should be given in range of the given below code to print nothing in output?</b></p>
+<pre class="prettyprint notranslate">
+for i in range(?):
+   print(i)
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+0
+
+Range of ‘o’ is empty so nothing will be printed.
+</pre>
+<p><b>What will be the output of the following code?</b></p>
+<pre class="prettyprint notranslate">
+for i in ['t', 'n', 'i ', 'o', 'p'][::-1]:
+   print(i)
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+p o i n t
+</pre>
+<p><b>What is the output of the following code?</b></p>
+<pre class="prettyprint notranslate">
+string = ''Tutorials Point is best''
+for i in ''.join(string.split()):
+   print(i, end= ''. '')
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+T.u.t.o.r.i.a.l.s. .P.o.i.n.t. .i.s. .b.e.s.t.
+</pre>
+<p><b>What is the output of the following code?</b></p>
+<pre class="prettyprint notranslate">
+n =(m for m in range(3))
+for m in n:
+   print(m)
+for m in n:
+   print(m)
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+0 1 2
+
+In python we can only loop once over a generator object.
+</pre>
+<p><b>Which keyword (‘?’) is used to give the following output of the following code?</b></p>
+<p>Input :</p>
+<pre class="prettyprint notranslate">
+print(?''\nHello'')
+</pre>
+<p>Output :</p>
+<pre class="result notranslate">
+\nHello
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+? = r
+</pre>
+<p><b>What will be the output of the code?</b></p>
+<pre class="prettyprint notranslate">
+z = ''Best website is Tutorials Point''
+z.find(''Tutorials'')
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+16
+</pre>
+<p><b>Calculate total number of 5 in the below given list? And State the function to calculate number of 5.</b></p>
+<pre class="prettyprint notranslate">
+List1 = [5, 50, 55, 555, 5555]
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+List1.count(5) , 1
+</pre>
+<p><b>What will be the output of the code when it will be executed?</b></p>
+<pre class="prettyprint notranslate">
+def func(values):
+   values[0] = 'a'
+v =[ 'b', 'c' , 'd']
+func(v)
+print(v)
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+['a', 'c', 'd']
+</pre>
+<p><b>What is the output of the code?</b></p>
+<pre class="prettyprint notranslate">
+d0 = { 'a':1, 'b':2}
+d1 = { 'a':3, 'b':4}
+d1 &gt; d0
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+Error
+
+Arithmetic Operations on Dictionary are not applicable.
+</pre>
+<p><b>What is the output of the code?</b></p>
+<pre class="prettyprint notranslate">
+q = ( 'a', 'b')
+3 * q
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+('a', 'b', 'a', 'b' , 'a' , 'b', 'a', 'b')
+
+In tuple ‘*’ is used to concatenate.
+</pre>
+<p><b>What is the output of the code?</b></p>
+<pre class="prettyprint notranslate">
+def f():
+   try:
+      return(1)
+   finally:
+      return(2)
+k = f()
+print(k)
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+2
+</pre>
+<p><b>What is the output of the code?</b></p>
+<pre class="prettyprint notranslate">
+def f():
+   try:
+      print(1)
+   finally:
+      print(2)
+j = f()
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+1 2
+</pre>
+<p><b>Is 'a==b' in the below code? Or what is the output of the given below code?</b></p>
+<pre class="prettyprint notranslate">
+import random
+a = random.randrange(4)
+b = random.choice(range(0, 3))
+a == b
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+False
+
+The method will return different integer for the given range.
+</pre>
+<p><b>State the output of the code?</b></p>
+<pre class="prettyprint notranslate">
+math.copysign(2 ,-1)
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+-2.0
+
+This function returns a float value to the user. Here the absolute value is that of the first argument and sign is that of the second argument.
+</pre>
+<p><b>What is the output of following code?</b></p>
+<pre class="prettyprint notranslate">
+print('TutorialsPointisthebest'.partition('is'))
+</pre>
+<p>Answer :</p>
+<pre class="result interview_no">
+('TutorialsPoint', 'is' , 'thebest')
+</pre>
+
+</body>
+</html>

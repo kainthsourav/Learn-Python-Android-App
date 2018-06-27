@@ -1,0 +1,519 @@
+<html>
+<head>
+   <link rel="stylesheet" href="file:///android_asset/style-min.css"/>
+   <title>Python Strings</title>
+</head>
+<body style="padding: 10px !important;">
+<h1>Python - Strings</h1>
+<p>Strings are amongst the most popular types in Python. We can create them simply by enclosing characters in quotes. Python treats single quotes the same as double quotes. Creating strings is as simple as assigning a value to a variable. For example &minus;</p>
+<pre class="prettyprint notranslate">
+var1 = 'Hello World!'
+var2 = "Python Programming"
+</pre>
+<h2>Accessing Values in Strings</h2>
+<p>Python does not support a character type; these are treated as strings of length one, thus also considered a substring.</p>
+<p>To access substrings, use the square brackets for slicing along with the index or indices to obtain your substring. For example &minus;</p>
+<pre class="prettyprint notranslate">
+#!/usr/bin/python
+
+var1 = 'Hello World!'
+var2 = "Python Programming"
+
+print "var1[0]: ", var1[0]
+print "var2[1:5]: ", var2[1:5]
+</pre>
+<p>When the above code is executed, it produces the following result &minus;</p>
+<pre class="result notranslate">
+var1[0]:  H
+var2[1:5]:  ytho
+</pre>
+<h2>Updating Strings</h2>
+<p>You can "update" an existing string by (re)assigning a variable to another string. The new value can be related to its previous value or to a completely different string altogether. For example &minus;</p>
+<pre class="prettyprint notranslate">
+#!/usr/bin/python
+
+var1 = 'Hello World!'
+
+print "Updated String :- ", var1[:6] + 'Python'
+</pre>
+<p>When the above code is executed, it produces the following result &minus;</p>
+<pre class="result notranslate">
+Updated String :-  Hello Python
+</pre>
+<h2>Escape Characters</h2>
+<p>Following table is a list of escape or non-printable characters that can be represented with backslash notation.</p>
+<p>An escape character gets interpreted; in a single quoted as well as double quoted strings.</p>
+<table class="table table-bordered">
+<tr><th style="text-align:center;vertical-align:middle;width:30%">Backslash Notation</th>
+<th style="text-align:center;">Hexadecimal Character</th>
+<th style="text-align:center;vertical-align:middle;">Description</th>
+</tr>
+<tr>
+<td>\a</td>
+<td>0x07</td>
+<td>Bell or alert</td>
+</tr>
+<tr>
+<td>\b</td>
+<td>0x08</td>
+<td>Backspace</td>
+</tr>
+<tr>
+<td>\cx</td>
+<td>&nbsp;</td>
+<td>Control-x</td>
+</tr>
+<tr>
+<td>\C-x</td>
+<td>&nbsp;</td>
+<td>Control-x</td>
+</tr>
+<tr>
+<td>\e</td>
+<td>0x1b</td>
+<td>Escape</td>
+</tr>
+<tr>
+<td>\f</td>
+<td>0x0c</td>
+<td>Formfeed</td>
+</tr>
+<tr>
+<td>\M-\C-x</td>
+<td>&nbsp;</td>
+<td>Meta-Control-x</td>
+</tr>
+<tr>
+<td>\n</td>
+<td>0x0a</td>
+<td>Newline</td>
+</tr>
+<tr>
+<td style="vertical-align:middle;">\nnn</td>
+<td>&nbsp;</td>
+<td>Octal notation, where n is in the range 0.7</td>
+</tr>
+<tr>
+<td>\r</td>
+<td>0x0d</td>
+<td>Carriage return</td>
+</tr>
+<tr>
+<td>\s</td>
+<td>0x20</td>
+<td>Space</td>
+</tr>
+<tr>
+<td>\t</td>
+<td>0x09</td>
+<td>Tab</td>
+</tr>
+<tr>
+<td>\v</td>
+<td>0x0b</td>
+<td>Vertical tab</td>
+</tr>
+<tr>
+<td>\x</td>
+<td>&nbsp;</td>
+<td>Character x</td>
+</tr>
+<tr>
+<td style="vertical-align:middle;">\xnn</td>
+<td>&nbsp;</td>
+<td>Hexadecimal notation, where n is in the range 0.9, a.f, or A.F</td>
+</tr>
+</table>
+<h2>String Special Operators</h2>
+<p>Assume string variable <b>a</b> holds 'Hello' and variable <b>b</b> holds 'Python', then &minus;</p>
+<table class="table table-bordered">
+<tr>
+<th style="text-align:center;width:10%">Operator</th>
+<th style="text-align:center;width:45%">Description</th>
+<th style="text-align:center;">Example</th>
+</tr>
+<tr>
+<td style="vertical-align:middle;text-align:center;">+</td>
+<td>Concatenation - Adds values on either side of the operator</td>
+<td style="vertical-align:middle;">a + b will give HelloPython</td>
+</tr>
+<tr>
+<td style="vertical-align:middle;text-align:center;">*</td>
+<td>Repetition - Creates new strings, concatenating multiple copies of the same
+string</td>
+<td style="vertical-align:middle;">a*2 will give -HelloHello</td>
+</tr>
+<tr>
+<td style="vertical-align:middle;text-align:center;">[]</td>
+<td>Slice - Gives the character from the given index</td>
+<td>a[1] will give e</td>
+</tr>
+<tr>
+<td style="vertical-align:middle;text-align:center;">[ : ]</td>
+<td>Range Slice - Gives the characters from the given range</td>
+<td style="vertical-align:middle;">a[1:4] will give ell</td>
+</tr>
+<tr>
+<td style="vertical-align:middle;text-align:center;">in</td>
+<td>Membership - Returns true if a character exists in the given string</td>
+<td style="vertical-align:middle;">H in a will give 1</td>
+</tr>
+<tr>
+<td style="vertical-align:middle;text-align:center;">not in </td>
+<td>Membership - Returns true if a character does not exist in the given string</td>
+<td style="vertical-align:middle;">M not in a will give 1</td>
+</tr>
+<tr>
+<td style="vertical-align:middle;text-align:center;">r/R</td>
+<td>Raw String - Suppresses actual meaning of Escape characters. The syntax for raw strings is exactly the same as for normal strings with the exception of the raw string operator, the letter "r," which precedes the quotation marks. The "r" can be lowercase (r) or uppercase (R) and must be placed immediately preceding the first quote mark.</td>
+<td style="vertical-align:middle;">print r'\n' prints \n and print R'\n'prints \n</td>
+</tr>
+<tr>
+<td style="vertical-align:middle;text-align:center;">%</td>
+<td>Format - Performs String formatting</td>
+<td style="vertical-align:middle;">See at next section</td>
+</tr>
+</table>
+<h2>String Formatting Operator</h2>
+<p>One of Python's coolest features is the string format operator %. This operator is unique to strings and makes up for the pack of having functions from C's printf() family. Following is a simple example &minus;</p>
+<pre class="prettyprint notranslate">
+#!/usr/bin/python
+
+print "My name is %s and weight is %d kg!" % ('Zara', 21) 
+
+</pre>
+<p>When the above code is executed, it produces the following result &minus;</p>
+<pre class="result notranslate">
+My name is Zara and weight is 21 kg!
+</pre>
+<p>Here is the list of complete set of symbols which can be used along with % &minus;</p>
+<table class="table table-bordered">
+<tr>
+<th style="text-align:center;width:30%">Format Symbol</th>
+<th style="text-align:center;">Conversion</th>
+</tr>
+<tr>
+<td>%c</td>
+<td>character</td>
+</tr>
+<tr>
+<td>%s</td>
+<td>string conversion via str() prior to formatting</td>
+</tr>
+<tr>
+<td>%i</td>
+<td>signed decimal integer</td>
+</tr>
+<tr>
+<td>%d</td>
+<td>signed decimal integer</td>
+</tr>
+<tr>
+<td>%u</td>
+<td>unsigned decimal integer</td>
+</tr>
+<tr>
+<td>%o</td>
+<td>octal integer</td>
+</tr>
+<tr>
+<td>%x</td>
+<td>hexadecimal integer (lowercase letters)</td>
+</tr>
+<tr>
+<td>%X</td>
+<td>hexadecimal integer (UPPERcase letters)</td>
+</tr>
+<tr>
+<td>%e</td>
+<td>exponential notation (with lowercase 'e')</td>
+</tr>
+<tr>
+<td>%E</td>
+<td>exponential notation (with UPPERcase 'E')</td>
+</tr>
+<tr>
+<td>%f</td>
+<td>floating point real number</td>
+</tr>
+<tr>
+<td>%g</td>
+<td>the shorter of %f and %e</td>
+</tr>
+<tr>
+<td>%G</td>
+<td>the shorter of %f and %E</td>
+</tr>
+</table>
+<p>Other supported symbols and functionality are listed in the following table &minus;</p>
+<table class="table table-bordered">
+<tr>
+<th style="text-align:center;width:30%">Symbol</th>
+<th style="text-align:center;">Functionality</th>
+</tr>
+<tr>
+<td style="text-align:center;width:30%">*</td>
+<td>argument specifies width or precision</td>
+</tr>
+<tr>
+<td style="text-align:center;width:30%">-</td>
+<td>left justification</td>
+</tr>
+<tr>
+<td style="text-align:center;width:30%">+</td>
+<td>display the sign</td>
+</tr>
+<tr>
+<td style="text-align:center;width:30%">&lt;sp&gt;</td>
+<td>leave a blank space before a positive number</td>
+</tr>
+<tr>
+<td style="text-align:center;width:30%">#</td>
+<td>add the octal leading zero ( '0' ) or hexadecimal leading '0x' or '0X',
+depending on whether 'x' or 'X' were used.</td>
+</tr>
+<tr>
+<td style="text-align:center;width:30%">0</td>
+<td>pad from left with zeros (instead of spaces)</td>
+</tr>
+<tr>
+<td style="text-align:center;width:30%">%</td>
+<td>'%%' leaves you with a single literal '%'</td>
+</tr>
+<tr>
+<td style="text-align:center;width:30%">(var)</td>
+<td>mapping variable (dictionary arguments)</td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;width:30%">m.n.</td>
+<td>m is the minimum total width and n is the number of digits to display after the
+decimal point (if appl.)</td>
+</tr>
+</table>
+<h2>Triple Quotes</h2>
+<p>Python's triple quotes comes to the rescue by allowing strings to span multiple lines, including verbatim NEWLINEs, TABs, and any other special characters.</p>
+<p>The syntax for triple quotes consists of three consecutive <b>single or double</b> quotes. </p>
+<pre class="prettyprint notranslate">
+#!/usr/bin/python
+
+para_str = """this is a long string that is made up of
+several lines and non-printable characters such as
+TAB ( \t ) and they will show up that way when displayed.
+NEWLINEs within the string, whether explicitly given like
+this within the brackets [ \n ], or just a NEWLINE within
+the variable assignment will also show up.
+"""
+print para_str
+</pre>
+<p>When the above code is executed, it produces the following result. Note how every single special character has been converted to its printed form, right down to the last NEWLINE at the end of the string between the "up." and closing triple quotes. Also note that NEWLINEs occur either with an explicit carriage return at the end of a line or its escape code (\n) &minus;</p>
+<pre class="prettyprint notranslate">
+this is a long string that is made up of
+several lines and non-printable characters such as
+TAB (    ) and they will show up that way when displayed.
+NEWLINEs within the string, whether explicitly given like
+this within the brackets [
+ ], or just a NEWLINE within
+the variable assignment will also show up.
+</pre>
+<p>Raw strings do not treat the backslash as a special character at all. Every character you put into a raw string stays the way you wrote it &minus;</p>
+<pre class="prettyprint notranslate">
+#!/usr/bin/python
+
+print 'C:\\nowhere'
+</pre>
+<p>When the above code is executed, it produces the following result &minus;</p>
+<pre class="prettyprint notranslate">
+C:\nowhere
+</pre>
+<p>Now let's make use of raw string. We would put expression in <b>r'expression'</b> as follows &minus;</p>
+<pre class="prettyprint notranslate">
+#!/usr/bin/python
+
+print r'C:\\nowhere'
+</pre>
+<p>When the above code is executed, it produces the following result &minus;</p>
+<pre class="prettyprint notranslate">
+C:\\nowhere
+</pre>
+<h2>Unicode String</h2>
+<p>Normal strings in Python are stored internally as 8-bit ASCII, while Unicode strings are stored as 16-bit Unicode. This allows for a more varied set of characters, including special characters from most languages in the world. I'll restrict my treatment of Unicode strings to the following &minus;</p>
+<pre class="prettyprint notranslate">
+#!/usr/bin/python
+
+print u'Hello, world!'
+</pre>
+<p>When the above code is executed, it produces the following result &minus;</p>
+<pre class="result notranslate">
+Hello, world!
+</pre>
+<p>As you can see, Unicode strings use the prefix u, just as raw strings use the prefix r.</p>
+<h2>Built-in String Methods</h2>
+<p>Python includes the following built-in methods to manipulate strings &minus;</p>
+<table class="table table-bordered">
+<tr>
+<th style="text-align:center;">Sr.No.</th>
+<th style="text-align:center;">Method &amp; Description</th>
+</tr>
+<tr><td style="text-align:center;vertical-align:middle;">1</td>
+<td><p><b>capitalize()</b></p>
+<p>Capitalizes first letter of string</p></td>
+</tr>
+<tr><td style="text-align:center;vertical-align:middle;">2</td>
+<td><p><b>center(width, fillchar)</b></p>
+<p>Returns a space-padded string with the original string centered to a total of width columns.</p></td>
+</tr>
+<tr><td style="text-align:center;vertical-align:middle;">3</td>
+<td><p><b>count(str, beg= 0,end=len(string))</b></p>
+<p>Counts how many times str occurs in string or in a substring of string if starting index beg and ending index end are given.</p></td>
+</tr>
+<tr><td style="text-align:center;vertical-align:middle;">4</td>
+<td><p><b>decode(encoding='UTF-8',errors='strict')</b></p>
+<p>Decodes the string using the codec registered for encoding. encoding defaults to the default string encoding.</p></td>
+</tr>
+<tr><td style="text-align:center;vertical-align:middle;">5</td>
+<td><p><b>encode(encoding='UTF-8',errors='strict')</b></p>
+<p>Returns encoded string version of string; on error, default is to raise a ValueError unless errors is given with 'ignore' or 'replace'.</p></td>
+</tr>
+<tr><td style="text-align:center;vertical-align:middle;">6</td>
+<td><p><b>endswith(suffix, beg=0, end=len(string))</b></p>
+<p>Determines if string or a substring of string (if starting index beg and ending index end are given) ends with suffix; returns true if so and false otherwise.</p></td>
+</tr>
+<tr><td style="text-align:center;vertical-align:middle;">7</td>
+<td><p><b>expandtabs(tabsize=8)</b></p>
+<p>Expands tabs in string to multiple spaces; defaults to 8 spaces per tab if tabsize not provided.</p></td>
+</tr>
+<tr><td style="text-align:center;vertical-align:middle;">8</td>
+<td><p><b>find(str, beg=0 end=len(string))</b></p>
+<p>Determine if str occurs in string or in a substring of string if starting index beg and ending index end are given returns index if found and -1 otherwise.</p></td>
+</tr>
+<tr><td style="text-align:center;vertical-align:middle;">9</td>
+<td><p><b>index(str, beg=0, end=len(string))</b></p>
+<p>Same as find(), but raises an exception if str not found.</p></td>
+</tr>
+<tr><td style="text-align:center;vertical-align:middle;">10</td>
+<td><p><b>isalnum()</b></p>
+<p>Returns true if string has at least 1 character and all characters are alphanumeric and false otherwise.</p></td>
+</tr>
+<tr><td style="text-align:center;vertical-align:middle;">11</td>
+<td><p><b>isalpha()</b></p>
+<p>Returns true if string has at least 1 character and all characters are alphabetic and false otherwise.</p></td>
+</tr>
+<tr><td style="text-align:center;vertical-align:middle;">12</td>
+<td><p><b>isdigit()</b></p>
+<p>Returns true if string contains only digits and false otherwise.</p></td>
+</tr>
+<tr><td style="text-align:center;vertical-align:middle;">13</td>
+<td><p><b>islower()</b></p>
+<p>Returns true if string has at least 1 cased character and all cased characters are in lowercase and false otherwise.</p></td>
+</tr>
+<tr><td style="text-align:center;vertical-align:middle;">14</td>
+<td><p><b>isnumeric()</b></p>
+<p>Returns true if a unicode string contains only numeric characters and false otherwise.</p></td>
+</tr>
+<tr><td style="text-align:center;vertical-align:middle;">15</td>
+<td><p><b>isspace()</b></p>
+<p>Returns true if string contains only whitespace characters and false otherwise.</p></td>
+</tr>
+<tr><td style="text-align:center;vertical-align:middle;">16</td>
+<td><p><b>istitle()</b></p>
+<p>Returns true if string is properly "titlecased" and false otherwise.</p></td>
+</tr>
+<tr><td style="text-align:center;vertical-align:middle;">17</td>
+<td><p><b>isupper()</b></p>
+<p>Returns true if string has at least one cased character and all cased characters are in uppercase and false otherwise.</p></td>
+</tr>
+<tr><td style="text-align:center;vertical-align:middle;">18</td>
+<td><p><b>join(seq)</b></p>
+<p>Merges (concatenates) the string representations of elements in sequence seq into a string, with separator string.</p></td>
+</tr>
+<tr><td style="text-align:center;vertical-align:middle;">19</td>
+<td><p><b>len(string)</b></p>
+<p>Returns the length of the string</p></td>
+</tr>
+<tr><td style="text-align:center;vertical-align:middle;">20</td>
+<td><p><b>ljust(width[, fillchar])</b></p>
+<p>Returns a space-padded string with the original string left-justified to a total of width columns.</p></td>
+</tr>
+<tr><td style="text-align:center;vertical-align:middle;">21</td>
+<td><p><b>lower()</b></p>
+<p>Converts all uppercase letters in string to lowercase.</p></td>
+</tr>
+<tr><td style="text-align:center;vertical-align:middle;">22</td>
+<td><p><b>lstrip()</b></p>
+<p>Removes all leading whitespace in string.</p></td>
+</tr>
+<tr><td style="text-align:center;vertical-align:middle;">23</td>
+<td><p><b>maketrans()</b></p>
+<p>Returns a translation table to be used in translate function.</p></td>
+</tr>
+<tr><td style="text-align:center;vertical-align:middle;">24</td>
+<td><p><b>max(str)</b></p>
+<p>Returns the max alphabetical character from the string str.</p></td>
+</tr>
+<tr><td style="text-align:center;vertical-align:middle;">25</td>
+<td><p><b>min(str)</b></p>
+<p>Returns the min alphabetical character from the string str.</p></td>
+</tr>
+<tr><td style="text-align:center;vertical-align:middle;">26</td>
+<td><p><b>replace(old, new [, max])</b></p>
+<p>Replaces all occurrences of old in string with new or at most max occurrences if max given.</p></td>
+</tr>
+<tr><td style="text-align:center;vertical-align:middle;">27</td>
+<td><p><b>rfind(str, beg=0,end=len(string))</b></p>
+<p>Same as find(), but search backwards in string.</p></td>
+</tr>
+<tr><td style="text-align:center;vertical-align:middle;">28</td>
+<td><p><b>rindex( str, beg=0, end=len(string))</b></p>
+<p>Same as index(), but search backwards in string.</p></td>
+</tr>
+<tr><td style="text-align:center;vertical-align:middle;">29</td>
+<td><p><b>rjust(width,[, fillchar])</b></p>
+<p>Returns a space-padded string with the original string right-justified to a total of width columns.</p></td>
+</tr>
+<tr><td style="text-align:center;vertical-align:middle;">30</td>
+<td><p><b>rstrip()</b></p>
+<p>Removes all trailing whitespace of string.</p></td>
+</tr>
+<tr><td style="text-align:center;vertical-align:middle;">31</td>
+<td><p><b>split(str="", num=string.count(str))</b></p>
+<p>Splits string according to delimiter str (space if not provided) and returns list of substrings; split into at most num substrings if given.</p></td>
+</tr>
+<tr><td style="text-align:center;vertical-align:middle;">32</td>
+<td><p><b>splitlines( num=string.count('\n'))</b></p>
+<p>Splits string at all (or num) NEWLINEs and returns a list of each line with NEWLINEs removed.</p></td>
+</tr>
+<tr><td style="text-align:center;vertical-align:middle;">33</td>
+<td><p><b>startswith(str, beg=0,end=len(string))</b></p>
+<p>Determines if string or a substring of string (if starting index beg and ending index end are given) starts with substring str; returns true if so and false otherwise.</p></td>
+</tr>
+<tr><td style="text-align:center;vertical-align:middle;">34</td>
+<td><p><b>strip([chars])</b></p>
+<p>Performs both lstrip() and rstrip() on string</p></td>
+</tr>
+<tr><td style="text-align:center;vertical-align:middle;">35</td>
+<td><p><b>swapcase()</b></p>
+<p>Inverts case for all letters in string.</p></td>
+</tr>
+<tr><td style="text-align:center;vertical-align:middle;">36</td>
+<td><p><b>title()</b></p>
+<p>Returns "titlecased" version of string, that is, all words begin with uppercase and the rest are lowercase.</p></td>
+</tr>
+<tr><td style="text-align:center;vertical-align:middle;">37</td>
+<td><p><b>translate(table, deletechars="")</b></p>
+<p>Translates string according to translation table str(256 chars), removing those in the del string.</p></td>
+</tr>
+<tr><td style="text-align:center;vertical-align:middle;">38</td>
+<td><p><b>upper()</b></p>
+<p>Converts lowercase letters in string to uppercase.</p></td>
+</tr>
+<tr><td style="text-align:center;vertical-align:middle;">39</td>
+<td><p><b>zfill (width)</b></p>
+<p>Returns original string leftpadded with zeros to a total of width characters; intended for numbers, zfill() retains any sign given (less one zero).</p></td>
+</tr>
+<tr><td style="text-align:center;vertical-align:middle;">40</td>
+<td><p><b>isdecimal()</b></p>
+<p>Returns true if a unicode string contains only decimal characters and false otherwise.</p></td>
+</tr>
+</table>
+</body>
+</html>

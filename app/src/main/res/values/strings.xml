@@ -1,0 +1,84 @@
+<resources xmlns:android="http://schemas.android.com/tools">
+    <string name="app_name">Learn Python</string>
+    <string name="title_activity_advance">Advance</string>
+    <string-array name="b">
+        <item>1.Introduction</item>
+        <item>2.Overview</item>
+        <item>3.Basic Syntax</item>
+        <item>4.Variable Types</item>
+        <item>5.Basic Operators</item>
+        <item>6.Desicion Making</item>
+        <item>7.IF Statement</item>
+        <item>8.IF Eilf Else Statements</item>
+        <item>9.Nested IF Statements</item>
+        <item>10.Loops</item>
+        <item>11.Break Statements</item>
+        <item>12.Pass Statements</item>
+        <item>13.Numbers</item>
+        <item>14.Strings</item>
+        <item>15.Lists</item>
+        <item>16.Tuples</item>
+        <item>17.Dictionary</item>
+        <item>18.Date and Time</item>
+        <item>19.Functions</item>
+        <item>20.Modules</item>
+        <item>21.Files I/O</item>
+        <item>22.Exception Handling</item>
+    </string-array>
+    <string-array name="advance">
+        <item>1.Object Oriented</item>
+        <item>2.Regular Expressions</item>
+        <item>3.CGI Programming</item>
+        <item>4.MySQL Database Access</item>
+        <item>5.Network Programming</item>
+        <item>6.Sending Email using SMTP</item>
+        <item>7.Multithreading Programing</item>
+        <item>8.XML Processing</item>
+        <item>9.GUI Programiming</item>
+    </string-array>
+    <string-array name="prog">
+        <item>1.Hello World</item>
+        <item>2.Count to 10</item>
+        <item>3.Decisions</item>
+        <item>4.Debugging</item>
+        <item>5.Funtions</item>
+        <item>6.Lists</item>
+        <item>7.Loops</item>
+        <item>8.Boolean Expressions</item>
+        <item>9.Dictionaries</item>
+        <item>10.Using Modules</item>
+        <item>11.More on Lists</item>
+        <item>12.Revenge of the Strings</item>
+        <item>13.File I/O</item>
+        <item>14.Python Glossary</item>
+        <item>15.FAQ</item>
+    </string-array>
+    <string-array name="videos">
+        <item>Video</item>
+    </string-array>
+    <string name="title_activity_navigation">Navigation</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+</resources>
